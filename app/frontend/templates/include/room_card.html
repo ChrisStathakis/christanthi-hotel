@@ -1,0 +1,28 @@
+{% load static %}
+ <!-- room card -->
+<div class="knsl-room-card knsl-scroll-animation">
+    <div class="knsl-cover-frame">
+        <a href="{{ room.get_absolute_url }}"><img src="{{ room.image.url }}" alt="cover"></a>
+    </div>
+    <div class="knsl-description-frame">
+        <div class="knsl-room-features">
+            <div class="knsl-feature">
+                <div class="knsl-icon-frame"><img src="{% static 'img/icons/bed.svg' %}" alt="icon"></div>
+                <span>{{ room.maximum_people }} Guests</span>
+            </div>
+            <div class="knsl-feature">
+                <div class="knsl-icon-frame"><img src="{% static 'img/icons/square.svg' %}" alt="icon"></div>
+                <span>{{ room.room_size  }} sq</span>
+            </div>
+        </div>
+        <a href="{{ room.get_absolute_url }}">
+            <h3 class="knsl-mb-20">{{ room }}</h3>
+        </a>
+        <div class="knsl-text-light knsl-text-sm knsl-mb-20">Libero non aut dignissimos optio hic laudantium ex maiores enim et consequatur corrupti omnis.</div>
+        <div class="knsl-card-bottom">
+            {% comment %}<div class="knsl-price">$175.0<span>/night</span></div> {% endcomment %}
+            <a href="{{ room.get_absolute_url }}" class="knsl-btn"><img src="{% static 'img/icons/bookmark.svg' %}" alt="icon">Book now</a>
+        </div>
+    </div>
+</div>
+<!-- room card end -->

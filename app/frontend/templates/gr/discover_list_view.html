@@ -1,0 +1,422 @@
+{% extends 'gr/index.html' %} {% load static %}
+
+{% block content %}
+
+    <!-- page wrapper -->
+  <div class="knsl-app">
+
+   {% include 'include/navbar.html' %}
+
+
+    <!-- banner -->
+    <section class="knsl-banner-simple knsl-transition-bottom">
+      <img src="{% static 'img/palm.svg' %}" class="knsl-deco-left" alt="palm">
+      <img src="{% static 'img/palm.svg' %}" class="knsl-deco-right" alt="palm">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <div class="knsl-center knsl-title-frame">
+              <h1 class="knsl-mb-20 knsl-h1-inner">ΠΡΟΟΡΙΣΜΟΙ</h1>
+              <p class="knsl-mb-30">Laborum accusantium libero commodi. Voluptate consequatur itaque expedita accusamus impedit perspiciatis asperiores necessitatibus assumenda magnam ipsa.</p>
+              <ul class="knsl-breadcrumbs">
+                <li><a href="{% url 'homepage_gr' %}">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+                <li><span>ΠΡΟΟΡΙΣΜΟΙ</span></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- blog -->
+    <section class="knsl-p-100-100">
+      <img src="img/palm.svg" class="knsl-deco-left" alt="palm">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+
+            <!-- blog card -->
+            <div class="knsl-blog-card">
+              <div class="knsl-cover-frame">
+                <a href="publication.html"><img src="img/blog/1.jpg" alt="cover"></a>
+              </div>
+              <div class="knsl-description-frame">
+                <div class="knsl-room-features">
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame knsl-icon-author"><img src="img/faces/1.jpg" alt="icon"></div>
+                    <span>Paul Trueman</span>
+                  </div>
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame"><img src="img/icons/time.svg" alt="icon"></div>
+                    <span>12.08.21 23:13</span>
+                  </div>
+                </div>
+                <a href="publication.html">
+                  <h4 class="knsl-mb-20">18 Easy Steps for Planning Your Next Trip</h4>
+                </a>
+                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
+              </div>
+            </div>
+            <!-- blog card end -->
+
+          </div>
+          <div class="col-lg-4">
+
+            <!-- blog card -->
+            <div class="knsl-blog-card">
+              <div class="knsl-cover-frame">
+                <a href="publication.html"><img src="img/blog/2.jpg" alt="cover"></a>
+              </div>
+              <div class="knsl-description-frame">
+                <div class="knsl-room-features">
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame knsl-icon-author"><img src="img/faces/2.jpg" alt="icon"></div>
+                    <span>Paul Trueman</span>
+                  </div>
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame"><img src="img/icons/time.svg" alt="icon"></div>
+                    <span>12.08.21 23:13</span>
+                  </div>
+                </div>
+                <a href="publication.html">
+                  <h4 class="knsl-mb-20">The Best Travel Insurance Companies for Seniors</h4>
+                </a>
+                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
+              </div>
+            </div>
+            <!-- blog card end -->
+
+          </div>
+          <div class="col-lg-4">
+
+            <!-- blog card -->
+            <div class="knsl-blog-card">
+              <div class="knsl-cover-frame">
+                <a href="publication.html"><img src="img/blog/3.jpg" alt="cover"></a>
+              </div>
+              <div class="knsl-description-frame">
+                <div class="knsl-room-features">
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame knsl-icon-author"><img src="img/faces/3.jpg" alt="icon"></div>
+                    <span>Paul Trueman</span>
+                  </div>
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame"><img src="img/icons/time.svg" alt="icon"></div>
+                    <span>12.08.21 23:13</span>
+                  </div>
+                </div>
+                <a href="publication.html">
+                  <h4 class="knsl-mb-20">18 Easy Steps for Planning Your Next Trip</h4>
+                </a>
+                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
+              </div>
+            </div>
+            <!-- blog card end -->
+
+          </div>
+          <div class="col-lg-4">
+
+            <!-- blog card -->
+            <div class="knsl-blog-card knsl-scroll-animation">
+              <div class="knsl-cover-frame">
+                <a href="publication.html"><img src="img/blog/4.jpg" alt="cover"></a>
+              </div>
+              <div class="knsl-description-frame">
+                <div class="knsl-room-features">
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame knsl-icon-author"><img src="img/faces/1.jpg" alt="icon"></div>
+                    <span>Paul Trueman</span>
+                  </div>
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame"><img src="img/icons/time.svg" alt="icon"></div>
+                    <span>12.08.21 23:13</span>
+                  </div>
+                </div>
+                <a href="publication.html">
+                  <h4 class="knsl-mb-20">The Best Travel Insurance Companies for Seniors</h4>
+                </a>
+                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
+              </div>
+            </div>
+            <!-- blog card end -->
+
+          </div>
+          <div class="col-lg-4">
+
+            <!-- blog card -->
+            <div class="knsl-blog-card knsl-scroll-animation">
+              <div class="knsl-cover-frame">
+                <a href="publication.html"><img src="img/blog/5.jpg" alt="cover"></a>
+              </div>
+              <div class="knsl-description-frame">
+                <div class="knsl-room-features">
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame knsl-icon-author"><img src="img/faces/2.jpg" alt="icon"></div>
+                    <span>Paul Trueman</span>
+                  </div>
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame"><img src="img/icons/time.svg" alt="icon"></div>
+                    <span>12.08.21 23:13</span>
+                  </div>
+                </div>
+                <a href="publication.html">
+                  <h4 class="knsl-mb-20">The Ultimate Guide to Traveling When You Have No Money</h4>
+                </a>
+                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
+              </div>
+            </div>
+            <!-- blog card end -->
+
+          </div>
+          <div class="col-lg-4">
+
+            <!-- blog card -->
+            <div class="knsl-blog-card knsl-scroll-animation">
+              <div class="knsl-cover-frame">
+                <a href="publication.html"><img src="img/blog/6.jpg" alt="cover"></a>
+              </div>
+              <div class="knsl-description-frame">
+                <div class="knsl-room-features">
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame knsl-icon-author"><img src="img/faces/3.jpg" alt="icon"></div>
+                    <span>Paul Trueman</span>
+                  </div>
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame"><img src="img/icons/time.svg" alt="icon"></div>
+                    <span>12.08.21 23:13</span>
+                  </div>
+                </div>
+                <a href="publication.html">
+                  <h4 class="knsl-mb-20">18 Easy Steps for Planning Your Next Trip</h4>
+                </a>
+                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
+              </div>
+            </div>
+            <!-- blog card end -->
+
+          </div>
+          <div class="col-lg-4">
+
+            <!-- blog card -->
+            <div class="knsl-blog-card knsl-scroll-animation">
+              <div class="knsl-cover-frame">
+                <a href="publication.html"><img src="img/blog/5.jpg" alt="cover"></a>
+              </div>
+              <div class="knsl-description-frame">
+                <div class="knsl-room-features">
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame knsl-icon-author"><img src="img/faces/2.jpg" alt="icon"></div>
+                    <span>Paul Trueman</span>
+                  </div>
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame"><img src="img/icons/time.svg" alt="icon"></div>
+                    <span>12.08.21 23:13</span>
+                  </div>
+                </div>
+                <a href="publication.html">
+                  <h4 class="knsl-mb-20">The Best Travel Insurance Companies for Seniors</h4>
+                </a>
+                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
+              </div>
+            </div>
+            <!-- blog card end -->
+
+          </div>
+          <div class="col-lg-4">
+
+            <!-- blog card -->
+            <div class="knsl-blog-card knsl-scroll-animation">
+              <div class="knsl-cover-frame">
+                <a href="publication.html"><img src="img/blog/2.jpg" alt="cover"></a>
+              </div>
+              <div class="knsl-description-frame">
+                <div class="knsl-room-features">
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame knsl-icon-author"><img src="img/faces/1.jpg" alt="icon"></div>
+                    <span>Paul Trueman</span>
+                  </div>
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame"><img src="img/icons/time.svg" alt="icon"></div>
+                    <span>12.08.21 23:13</span>
+                  </div>
+                </div>
+                <a href="publication.html">
+                  <h4 class="knsl-mb-20">The Ultimate Guide to Traveling When You Have No Money</h4>
+                </a>
+                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
+              </div>
+            </div>
+            <!-- blog card end -->
+
+          </div>
+          <div class="col-lg-4">
+
+            <!-- blog card -->
+            <div class="knsl-blog-card knsl-scroll-animation">
+              <div class="knsl-cover-frame">
+                <a href="publication.html"><img src="img/blog/3.jpg" alt="cover"></a>
+              </div>
+              <div class="knsl-description-frame">
+                <div class="knsl-room-features">
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame knsl-icon-author"><img src="img/faces/3.jpg" alt="icon"></div>
+                    <span>Paul Trueman</span>
+                  </div>
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame"><img src="img/icons/time.svg" alt="icon"></div>
+                    <span>12.08.21 23:13</span>
+                  </div>
+                </div>
+                <a href="publication.html">
+                  <h4 class="knsl-mb-20">18 Easy Steps for Planning Your Next Trip</h4>
+                </a>
+                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
+              </div>
+            </div>
+            <!-- blog card end -->
+
+          </div>
+          <div class="col-lg-4">
+
+            <!-- blog card -->
+            <div class="knsl-blog-card knsl-scroll-animation">
+              <div class="knsl-cover-frame">
+                <a href="publication.html"><img src="img/blog/4.jpg" alt="cover"></a>
+              </div>
+              <div class="knsl-description-frame">
+                <div class="knsl-room-features">
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame knsl-icon-author"><img src="img/faces/1.jpg" alt="icon"></div>
+                    <span>Paul Trueman</span>
+                  </div>
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame"><img src="img/icons/time.svg" alt="icon"></div>
+                    <span>12.08.21 23:13</span>
+                  </div>
+                </div>
+                <a href="publication.html">
+                  <h4 class="knsl-mb-20">The Best Travel Insurance Companies for Seniors</h4>
+                </a>
+                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
+              </div>
+            </div>
+            <!-- blog card end -->
+
+          </div>
+          <div class="col-lg-4">
+
+            <!-- blog card -->
+            <div class="knsl-blog-card knsl-scroll-animation">
+              <div class="knsl-cover-frame">
+                <a href="publication.html"><img src="img/blog/1.jpg" alt="cover"></a>
+              </div>
+              <div class="knsl-description-frame">
+                <div class="knsl-room-features">
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame knsl-icon-author"><img src="img/faces/2.jpg" alt="icon"></div>
+                    <span>Paul Trueman</span>
+                  </div>
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame"><img src="img/icons/time.svg" alt="icon"></div>
+                    <span>12.08.21 23:13</span>
+                  </div>
+                </div>
+                <a href="publication.html">
+                  <h4 class="knsl-mb-20">18 Easy Steps for Planning Your Next Trip</h4>
+                </a>
+                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
+              </div>
+            </div>
+            <!-- blog card end -->
+
+          </div>
+          <div class="col-lg-4">
+
+            <!-- blog card -->
+            <div class="knsl-blog-card knsl-scroll-animation">
+              <div class="knsl-cover-frame">
+                <a href="publication.html"><img src="img/blog/6.jpg" alt="cover"></a>
+              </div>
+              <div class="knsl-description-frame">
+                <div class="knsl-room-features">
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame knsl-icon-author"><img src="img/faces/2.jpg" alt="icon"></div>
+                    <span>Paul Trueman</span>
+                  </div>
+                  <div class="knsl-feature">
+                    <div class="knsl-icon-frame"><img src="img/icons/time.svg" alt="icon"></div>
+                    <span>12.08.21 23:13</span>
+                  </div>
+                </div>
+                <a href="publication.html">
+                  <h4 class="knsl-mb-20">The Best Travel Insurance Companies for Seniors</h4>
+                </a>
+                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
+              </div>
+            </div>
+            <!-- blog card end -->
+
+          </div>
+
+          <div class="col-lg-12">
+
+            <ul class="knsl-pagination">
+              <li class="knsl-active"><a href="#.">1</a></li>
+              <li><a href="#.">2</a></li>
+              <li><a href="#.">3</a></li>
+              <li><a href="#.">...</a></li>
+              <li><a href="#.">32</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="knsl-transition-top knsl-p-0-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <div class="knsl-center knsl-title-frame knsl-scroll-animation knsl-mb-100">
+              <h2 class="knsl-mb-20">Old Publications</h2>
+              <p class="knsl-mb-30">Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem. Laborum accusantium libero commodi id officiis itaque esse adipisci, necessitatibus asperiores, illo odio.</p>
+            </div>
+
+          </div>
+            {% for ele in object_list %}
+          <div class="col-lg-4">
+            <!-- blog card -->
+            <div class="knsl-blog-card knsl-blog-card-sm">
+              <div class="knsl-cover-frame">
+                <a href="publication.html"><img src="img/blog/1.jpg" alt="cover"></a>
+              </div>
+              <div class="knsl-description-frame">
+                <a href="publication.html">
+                  <h5 class="knsl-mb-10">The Best Travel Insurance Companies for Seniors</h5>
+                </a>
+                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
+              </div>
+            </div>
+            <!-- blog card end -->
+          </div>
+            {% endfor %}
+
+        </div>
+      </div>
+    </section>
+    <!-- blog end -->
+
+   {% include 'include/footer.html' %}
+
+
+
+
+  </div>
+  <!-- page wrapper end -->
+
+{% endblock %}

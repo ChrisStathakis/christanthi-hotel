@@ -1,0 +1,95 @@
+{% extends 'index.html' %} {% load static %}
+
+{% block extra_css %}
+    <style>
+
+        .image_div {
+            background: url({% static 'my_images/diamoni.jpg' %}) no-repeat center center fixed;
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+              height: 100%;
+              width: 100%;
+        }
+        #id_email {
+
+
+
+        }
+        p, label{
+            color: white;
+        }
+
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div role="main" class="main image_div" >
+        <div class="custom-page-wrapper pt-5 ">
+            <div class="spacer py-4 my-5">
+                <div class="row">
+                    <div class="col-md-12 align-self-center p-static text-center">
+						<div class="overflow-hidden mb-2">
+							<h1 class="text-12 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="1200">
+								{{ page_title }}
+							</h1>
+						</div>
+					</div>
+                    {% comment %}
+					<div class="col-md-12 align-self-center">
+						<div class="overflow-hidden">
+							<ul class="custom-breadcrumb-style-1 breadcrumb breadcrumb-light custom-font-secondary d-block text-center custom-ls-1 text-5 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="1450">
+								<li class="text-transform-none"><a style="color: black;" href="{% url 'homepage_gr' %}" class="text-decoration-none">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+								<li style="color: black;" class="text-transform-none active"> {{ page_title }}</li>
+							</ul>
+						</div>
+					</div>
+					{% endcomment %}
+				</div>
+            </div>
+
+        </div>
+        <div class="custom-page-wrapper pt-5 pb-1">
+            <div class="spacer py-4 my-5"></div>
+            <div class="container container-lg-custom" >
+                <div class="row">
+                    <div class="col-2 "></div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h4>Ο Διαγωνισμός μας <br />
+                                    {{ obj.title }} </h4>
+                            </div>
+                            <div class="card-body " style="background-color: #CAAF97">
+                                <form method="post" class="form text-center" action="{% url 'newsletter:newsletter_valid_form' %}">
+                                    {{ form }}
+                                    <hr />
+                                    <button type="submit" class="btn btn-info" style="background-color: white;color: #CAAF97">  ΕΓΓΡΑΦΗ </button>
+                                    <br />
+                                    <hr>
+                                    <h5>ΠληροφορΙες Διαγωνισμου</h5>
+
+                                    <a target="_blank" style="color: white"  href="{% url 'privacy_gr' %}">¨Οροι Χρήσης</a>
+                                </form>
+
+                                {{ obj.text|safe }}
+
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-2"></div>
+
+                </div>
+                <div class="row" style="margin-bottom: 200px"></div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block footer %} {% endblock %}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- color of address bar in mobile browser -->
+  <meta name="theme-color" content="#28292C">
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="img/thumbnail.ico" type="image/x-icon">
+  <title>Kinsley documentation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #E56734;
+      color: #FDFDFF;
+    }
+
+    header {
+      padding: 90px 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 72px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    a {
+      color: #FDFDFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #FDFDFF;
+      text-decoration: underline;
+    }
+
+    pre {
+      overflow-x: scroll;
+      padding: 30px;
+      background-color: #1A2430;
+      color: #FDFDFF;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Kinsley documentation</h1>
+      <h3>Thank you for purchasing!</h3>
+    </header>
+    <section class="marcup">
+      <h2>App HTML marcup</h2>
+      <br>
+      <br>
+
+
+
+      <pre style="margin: 0; line-height: 125%"><span style="color: #cd2828; font-weight: bold">&lt;!DOCTYPE html&gt;</span>
+      <span style="color: #6ab825; font-weight: bold">&lt;html</span> <span style="color: #bbbbbb">lang=</span><span style="color: #ed9d13">&quot;zxx&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+      <span style="color: #6ab825; font-weight: bold">&lt;head&gt;</span>
+        ...
+      <span style="color: #6ab825; font-weight: bold">&lt;/head&gt;</span>
+
+      <span style="color: #6ab825; font-weight: bold">&lt;body&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- page wrapper --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;knsl-app&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+          <span style="color: #999999; font-style: italic">&lt;!-- preloader --&gt;</span>
+          <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;knsl-preloader-frame&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            ...
+          <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+          <span style="color: #999999; font-style: italic">&lt;!-- preloader end --&gt;</span>
+
+          <span style="color: #999999; font-style: italic">&lt;!-- datepicker frame --&gt;</span>
+          <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;knsl-datepicker-place&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/div&gt;</span>
+
+          <span style="color: #999999; font-style: italic">&lt;!-- top bar --&gt;</span>
+          <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;knsl-top-bar&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            ...
+          <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+          <span style="color: #999999; font-style: italic">&lt;!-- top bar end --&gt;</span>
+
+          <span style="color: #999999; font-style: italic">&lt;!-- banner --&gt;</span>
+          <span style="color: #6ab825; font-weight: bold">&lt;section</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;knsl-banner&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            ...
+          <span style="color: #6ab825; font-weight: bold">&lt;/section&gt;</span>
+          <span style="color: #999999; font-style: italic">&lt;!-- banner end --&gt;</span>
+
+          ...
+
+          <span style="color: #999999; font-style: italic">&lt;!-- footer --&gt;</span>
+          <span style="color: #6ab825; font-weight: bold">&lt;footer&gt;</span>
+            ...
+          <span style="color: #6ab825; font-weight: bold">&lt;/footer&gt;</span>
+          <span style="color: #999999; font-style: italic">&lt;!-- footer end --&gt;</span>
+
+          <span style="color: #999999; font-style: italic">&lt;!-- popup --&gt;</span>
+          <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;knsl-success&quot;</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;knsl-popup&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            ...
+          <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+          <span style="color: #999999; font-style: italic">&lt;!-- popup end --&gt;</span>
+
+          <span style="color: #999999; font-style: italic">&lt;!-- popup --&gt;</span>
+          <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;knsl-popup-frame&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            ...
+          <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+          <span style="color: #999999; font-style: italic">&lt;!-- popup end --&gt;</span>
+
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- page wrapper end --&gt;</span>
+
+        ...
+
+      <span style="color: #6ab825; font-weight: bold">&lt;/body&gt;</span>
+
+      <span style="color: #6ab825; font-weight: bold">&lt;/html&gt;</span>
+      </pre>
+
+
+
+
+
+
+
+    </section>
+    <section class="css-assets">
+      <br>
+      <br>
+      <h2>CSS assets</h2>
+      <p>Plugins</p>
+      <ul>
+        <li><a target="_blank" href="https://getbootstrap.com">Bootstrap 4</a></li>
+        <li><a target="_blank" href="https://idangero.us/swiper/">Swiper</a></li>
+        <li><a target="_blank" href="https://fancyapps.com/fancybox/3/">Fancybox</a></li>
+        <li><a target="_blank" href="https://fontawesome.com/v4.7.0/icons/">Font awesome</a></li>
+        <li><a target="_blank" href="https://jqueryniceselect.hernansartorio.com">Niceselect</a></li>
+        <li><a target="_blank" href="http://t1m0n.name/air-datepicker/docs/index-ru.html">Datepicker</a></li>
+      </ul>
+      <br>
+      <p>Kinsley scss</p>
+      <ul>
+
+        <li>_variables.scss</li>
+        <li>_common.scss</li>
+        <li>_frame.scss</li>
+        <li>_content.scss</li>
+        <li>_forms.scss</li>
+        <br>
+        <li>style.scss (compiled in style.css)</li>
+
+      </ul>
+      <br>
+      <p>Kinsley css</p>
+      <ul>
+        <li>style.css</li>
+      </ul>
+      <br>
+      <br>
+
+
+
+      <pre style="margin: 0; line-height: 125%"><span style="color: #6ab825; font-weight: bold">&lt;head&gt;</span>
+
+        ...
+
+        <span style="color: #999999; font-style: italic">&lt;!-- bootstrap css --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/plugins/bootstrap.min.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- swiper css --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/plugins/swiper.min.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- fancybox css --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/plugins/fancybox.min.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- font awesome css --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/plugins/font-awesome.min.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- nice select css --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/plugins/nice-select.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- datepicker css --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/plugins/datepicker.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- kinsley css --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/style.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+        ...
+
+      <span style="color: #6ab825; font-weight: bold">&lt;/head&gt;</span>
+      </pre>
+
+
+
+
+
+
+    </section>
+    <section class="js assets">
+      <br>
+      <br>
+      <h2>Js assets</h2>
+      <p>Plugins</p>
+      <ul>
+
+        <li><a target="_blank" href="https://jquery.com">jQuery</a></li>
+        <li><a target="_blank" href="https://getbootstrap.com">Bootstrap 4</a></li>
+        <li><a target="_blank" href="https://jqueryniceselect.hernansartorio.com">Niceselect</a></li>
+        <li><a target="_blank" href="http://t1m0n.name/air-datepicker/docs/index-ru.html">Datepicker</a></li>
+        <li><a target="_blank" href="http://www.smoothscroll.net/mac/">Smooth scroll</a></li>
+        <li><a target="_blank" href="https://isotope.metafizzy.co">Isotope</a></li>
+        <li><a target="_blank" href="https://www.mapbox.com">Mapbox</a></li>
+        <li><a target="_blank" href="https://fancyapps.com/fancybox/3/">Fancybox</a></li>
+        <li><a target="_blank" href="https://idangero.us/swiper/">Swiper</a></li>
+        <li><a target="_blank" href="https://rgalus.github.io/sticky-js/">Sticky</a></li>
+
+
+      </ul>
+      <br>
+      <p>Kinsley assets</p>
+      <ul>
+        <li>main.js</li>
+      </ul>
+      <br>
+      <br>
+
+
+
+      <pre style="margin: 0; line-height: 125%"><span style="color: #6ab825; font-weight: bold">&lt;body&gt;</span>
+
+        ...
+
+        <span style="color: #999999; font-style: italic">&lt;!-- jquery js --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/jquery.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- bootstrap js --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/bootstrap.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- nice select js --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/jquery.nice-select.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- datepicker js --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/datepicker.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- smooth scroll js --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/smooth-scroll.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- isotope js --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/isotope.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- mapbox js --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/mapbox.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- fancybox js --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/fancybox.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- swiper js --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/swiper.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- sticky js --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/sticky.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- kinsley js --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/main.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+
+      <span style="color: #6ab825; font-weight: bold">&lt;/body&gt;</span>
+      </pre>
+
+
+
+
+
+
+    </section>
+    <section class="fonts">
+      <br>
+      <br>
+      <h2>Fonts</h2>
+      <ul>
+        <li><a target="_blank" href="https://fonts.google.com/specimen/Jost">Jost</a></li>
+        <li><a target="_blank" href="https://fonts.google.com/specimen/Monoton">Monoton</a></li>
+      </ul>
+      <br>
+      <h2>Icons</h2>
+      <ul>
+        <li><a target="_blank" href="https://fontawesome.com">Font awesome</a></li>
+      </ul>
+
+    </section>
+    <br>
+    <br>
+  </div>
+</body>
+
+</html>

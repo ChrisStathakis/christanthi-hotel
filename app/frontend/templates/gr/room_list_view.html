@@ -1,0 +1,95 @@
+{% extends 'gr/index.html' %} {% load  static %}
+
+{% block content %}
+
+    <!-- page wrapper -->
+    <div class="knsl-app">
+    {% include 'include/navbar.html' %}
+       <!-- banner -->
+    <section class="knsl-banner-simple knsl-transition-bottom">
+      <img src="{% static 'img/palm.svg' %}" class="knsl-deco-left" alt="palm">
+      <img src="{% static 'img/palm.svg' %}" class="knsl-deco-right" alt="palm">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <div class="knsl-center knsl-title-frame">
+              <h1 class="knsl-mb-20 knsl-h1-inner">Choose your Room</h1>
+              <p class="knsl-mb-30">Laborum accusantium libero commodi. Voluptate consequatur itaque expedita accusamus impedit perspiciatis asperiores necessitatibus assumenda magnam ipsa.</p>
+              <ul class="knsl-breadcrumbs">
+                <li><a href="{% url 'homepage_gr' %}">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+                <li><span>ΔΩΜΑΤΙΑ</span></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- rooms -->
+    <section class="knsl-p-100-100">
+      <img src="{% static 'img/palm.svg' %}" class="knsl-deco-left" alt="palm">
+      <div class="container">
+
+          {% comment %}
+        <div class="knsl-filter knsl-mb-60">
+          <a href="#" data-filter="*" class="knsl-work-category knsl-current">All Rooms</a>
+          <a href="#" data-filter=".economy" class="knsl-work-category">Economy</a>
+          <a href="#" data-filter=".standart" class="knsl-work-category">Standart</a>
+          <a href="#" data-filter=".deluxe" class="knsl-work-category">Deluxe</a>
+        </div>
+        {% endcomment %}
+
+        <div class="knsl-masonry-grid knsl-3-col">
+
+          <div class="knsl-grid-sizer"></div>
+            {% for room in room_list %}
+                <div class="knsl-masonry-grid-item knsl-masonry-grid-item-33 economy">
+                    <!-- room card -->
+                    <div class="knsl-room-card">
+                      <div class="knsl-cover-frame">
+                        <a href="room.html"><img src="img/rooms/2.jpg" alt="cover"></a>
+                        <div class="knsl-badge">Popular</div>
+                      </div>
+                      <div class="knsl-description-frame">
+                        <div class="knsl-room-features">
+                          <div class="knsl-feature">
+                            <div class="knsl-icon-frame"><img src="img/icons/bed.svg" alt="icon"></div>
+                            <span>2 Guests</span>
+                          </div>
+                          <div class="knsl-feature">
+                            <div class="knsl-icon-frame"><img src="img/icons/square.svg" alt="icon"></div>
+                            <span>50 Ft²</span>
+                          </div>
+                        </div>
+                        <a href="room.html">
+                          <h3 class="knsl-mb-20">Standart Room</h3>
+                        </a>
+                        <div class="knsl-text-light knsl-text-sm knsl-mb-20">Libero non aut dignissimos optio hic laudantium ex maiores enim et consequatur corrupti omnis.</div>
+                        <div class="knsl-card-bottom">
+                          <div class="knsl-price">$75.0<span>/night</span></div>
+                          <a href="room.html" class="knsl-btn"><img src="img/icons/bookmark.svg" alt="icon">Book now</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- room card end -->
+                </div>
+            {% endfor %}
+
+        </div>
+
+      </div>
+    </section>
+    <!-- rooms end -->
+
+
+
+
+    {% include 'include/footer.html' %}
+
+  </div>
+    <!-- page wrapper end -->
+
+{% endblock %}

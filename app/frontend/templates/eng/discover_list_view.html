@@ -36,25 +36,28 @@
       <img src="img/palm.svg" class="knsl-deco-left" alt="palm">
         <div class="container">
             <div class="row align-items-center">
-                {% for ele in object_list %}
+                {% for ele in objrct_list %}
                     <div class="col-lg-4">
                         <!-- blog card -->
                         <div class="knsl-blog-card">
                             <div class="knsl-cover-frame">
-                                <a href="{{ ele.get_absolute_url }}"><img src="{{ ele.image.url }}" alt="cover"></a>
+                                <a href=""><img src="" alt="cover"></a>
                             </div>
                             <div class="knsl-description-frame">
                                 <div class="knsl-room-features">
                                     <div class="knsl-feature">
-                                        <div class="knsl-icon-frame knsl-icon-author"></div>
-                                        <span>{{ ele.category }}</span>
+                                        <div class="knsl-icon-frame knsl-icon-author"><img src="img/faces/1.jpg" alt="icon"></div>
+                                        <span>Paul Trueman</span>
                                     </div>
-                                  
+                                    <div class="knsl-feature">
+                                        <div class="knsl-icon-frame"><img src="img/icons/time.svg" alt="icon"></div>
+                                        <span>12.08.21 23:13</span>
+                                    </div>
                                 </div>
-                                <a href="{{ ele.get_absolute_url }}">
-                                    <h4 class="knsl-mb-20">{{ ele }}</h4>
+                                <a href="publication.html">
+                                    <h4 class="knsl-mb-20">18 Easy Steps for Planning Your Next Trip</h4>
                                 </a>
-                                <div class="knsl-text-light knsl-text-sm">{{ ele.text|safe }}</div>
+                                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
                             </div>
                         </div>
                         <!-- blog card end -->

@@ -69,6 +69,7 @@ class DiscoverListView(ListView):
         context = super(DiscoverListView, self).get_context_data(**kwargs)
         context['page_title'] = 'Κοντινοί Προορισμοί'
         context['eng_link'] = reverse('discover_list_eng')
+        print('object list', self.object_list)
         return context
 
 

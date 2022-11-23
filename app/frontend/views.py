@@ -30,6 +30,7 @@ class AboutUsView(TemplateView):
         context = super(AboutUsView, self).get_context_data(**kwargs)
         context['page_title'] = 'Ποιοι Είμαστε'
         context['eng_link'] = reverse('about_us_eng')
+        context['photos'] = Banner.my_query.get_active().filter()
         return context
 
 

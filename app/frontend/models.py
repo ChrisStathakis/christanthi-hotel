@@ -21,11 +21,13 @@ class Banner(models.Model):
     SIZE_TYPE = (
         ('1', 'ΒΑΣΙΚΟ ΑΡΙΣΤΕΡΑ => (845*815)'),
         ('b', 'ΒΑΣΙΚΟ ΔΕΞΙΑ => (845*815)'),
-        ('2', 'Second Banner')
+        ('2', 'Second Banner'),
+        ('3', 'About Page')
     )
     active = models.BooleanField(default=True, verbose_name='ΚΑΤΑΣΤΑΣΗ')
     category = models.CharField(default='1', max_length=1, choices=SIZE_TYPE, verbose_name='ΚΑΤΗΓΟΡΙΑ')
     image = models.ImageField(upload_to='banners/', verbose_name='ΕΙΚΟΝΑ')
+    title = models.CharField(max_length=240, null=True, blank=True)
     objects = models.Manager()
     my_query = BannerManager()
 

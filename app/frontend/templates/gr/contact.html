@@ -12,8 +12,8 @@
           <div class="col-lg-12">
 
             <div class="knsl-center knsl-title-frame">
-              <h1 class="knsl-mb-20 knsl-h1-inner">Get in Touch</h1>
-              <p class="knsl-mb-30">Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem. Laborum accusantium libero commodi id officiis itaque esse adipisci, necessitatibus asperiores, illo odio.</p>
+              <h1 class="knsl-mb-20 knsl-h1-inner">ΕΠΙΚΟΙΝΩΝΙΑ</h1>
+              <BR />
               <ul class="knsl-breadcrumbs">
                 <li><a href="{% url 'homepage_gr' %}">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
                 <li><span>ΕΠΙΚΟΙΝΩΝΙΑ</span></li>
@@ -42,8 +42,8 @@
               <!-- icon box -->
               <div class="knsl-icon-box">
                 <img src="{% static 'img/features/9.svg' %}" alt="icon" class="knsl-mb-10">
-                <h5 class="knsl-mb-10">Welcome</h5>
-                <p>Santo Domingo 9479 Magarto st.</p>
+                <h5 class="knsl-mb-10">ΔΙΕΥΘΥΝΣΗ</h5>
+                <p>Κάστρο Μονεμβασιας</p>
               </div>
               <!-- icon box end -->
 
@@ -53,7 +53,7 @@
               <!-- icon box -->
               <div class="knsl-icon-box">
                 <img src="{% static 'img/features/10.svg' %}" alt="icon" class="knsl-mb-10">
-                <h5 class="knsl-mb-10">Call</h5>
+                <h5 class="knsl-mb-10">ΤΗΛΕΦΩΝΑ</h5>
                 <p>+93 (736) 6X8 84 84</p>
               </div>
               <!-- icon box end -->
@@ -64,7 +64,7 @@
               <!-- icon box -->
               <div class="knsl-icon-box">
                 <img src="{% static 'img/features/11.svg' %}" alt="icon" class="knsl-mb-10">
-                <h5 class="knsl-mb-10">Write</h5>
+                <h5 class="knsl-mb-10">EMAIL</h5>
                 <p>kinsley.inbox@mail.com</p>
               </div>
               <!-- icon box end -->
@@ -87,34 +87,16 @@
           <div class="col-lg-12">
 
             <div class="knsl-center knsl-title-frame knsl-scroll-animation knsl-mb-100">
-              <h2 class="knsl-mb-20">Kinsley is Waiting for You!</h2>
-              <p class="knsl-mb-30">Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem. Laborum accusantium libero commodi id officiis itaque esse adipisci, necessitatibus asperiores, illo odio.</p>
-              <a href="{% url 'about_us_gr' %}" class="knsl-btn knsl-btn-md">More about us</a>
+              <h2 class="knsl-mb-20">ΡΩΤΗΣΤΕ ΜΑΣ</h2>
+              <p class="knsl-mb-30"></p>
             </div>
 
           </div>
           <div class="col-lg-12">
             <form class="knsl-scroll-animation" method="post">
                 {% csrf_token %}
-              <div class="row">
-                <div class="col-lg-6">
-                  <input type="text" placeholder="Name">
-                </div>
-                <div class="col-lg-6">
-                  <input type="email" placeholder="Email">
-                </div>
-                <div class="col-lg-12">
-                  <textarea name="name" rows="8" placeholder="Text"></textarea>
-                </div>
-                <div class="col-lg-12">
-                  <div class="knsl-form-submit-frame">
-                    <!-- temporary button to show the popup -->
-                    <a class="knsl-btn" data-fancybox href="#knsl-success">Send</a>
-                    <!-- <button class="knsl-btn">Send</button> -->
-                    <div class="knsl-text-sm">*We promise not to disclose your personal information to third parties.</div>
-                  </div>
-                </div>
-              </div>
+                {{ form }}
+                <button type="submit" class="btn btn-success">ΑΠΟΣΤΟΛΗ</button>
             </form>
           </div>
         </div>

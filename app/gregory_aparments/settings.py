@@ -25,9 +25,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-REAL_DB = False
-PRODUCTION = False
+DEBUG = config('DEBUG')
+REAL_DB = False  # config('REAL_DB')
+PRODUCTION = False  # config('PRODUCTION')
 
 ALLOWED_HOSTS = ['demo-gregory-houses.herokuapp.com', 'www.gregoryshouse.com'] if PRODUCTION else ['*']
 
@@ -103,7 +103,7 @@ if REAL_DB:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': config('DATABASE'),
+            'NAME': config('NAME'),
             'USER': config('USER'),
             'PASSWORD': config('PASSWORD'),
             'HOST': config('HOST'),

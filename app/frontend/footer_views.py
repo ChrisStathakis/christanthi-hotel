@@ -8,7 +8,7 @@ class TermOfUseView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(TermOfUseView, self).get_context_data(**kwargs)
         context['page_title'] = 'Όροι χρήσης'
-        context['eng_link'] = reverse('term_of_use_gr')
+        context['eng_link'] = reverse('term_of_use_eng')
         return context
 
 
@@ -27,8 +27,8 @@ class TermOfUseEngView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['page_title'] = ''
-        context['eng_link'] = ''
+        context['page_title'] = 'FAQ'
+        context['eng_link'] = reverse('term_of_use_gr')
         return context
 
 

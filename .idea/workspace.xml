@@ -2,13 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17ef119f-8071-4fbb-8826-0dc9f5b23b0d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/frontend/static/my_photos/Menexes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/frontend/static/my_photos/menexes_logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/frontend/static/my_photos/test_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/frontend/templates/include/destinaiton_card_gr.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/frontend/templates/include/destination_card_eng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/frontend/templates/include/room_card_eng.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/db_.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/app/db_.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/eng/aboutus_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/eng/about_us_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/eng/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/eng/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/eng/discover_detail_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/eng/discover_detail_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/eng/discover_list_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/eng/discover_list_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/eng/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/eng/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/eng/room_detail_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/eng/room_detail_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/eng/room_list_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/eng/room_list_view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/frontend/templates/gr/aboutus_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/gr/aboutus_view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/frontend/templates/gr/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/gr/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/gr/discover_list_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/gr/discover_list_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/gr/footer_views/term_of_use.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/gr/footer_views/term_of_use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/gr/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/gr/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/gr/room_detail_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/gr/room_detail_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/gr/room_list_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/gr/room_list_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/include/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/include/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/include/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/include/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/include/js.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/include/js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/frontend/templates/include/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/include/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/frontend/templates/include/navbar_eng.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/include/navbar_eng.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/templates/include/room_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/include/room_card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/gregory_aparments/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/gregory_aparments/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/newsletter/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/newsletter/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/rooms/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/rooms/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/rooms/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/rooms/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,104 +45,41 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="3845" />
+    <option name="totalTimeSeconds" value="9110" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/frontend/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="90" column="36" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="98" column="70" selection-start-line="98" selection-start-column="70" selection-end-line="98" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="298" column="24" lean-forward="true" selection-start-line="253" selection-start-column="17" selection-end-line="298" selection-end-column="24" />
-              <folding>
-                <element signature="n#div#1;n#div#0;n#div#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="258">
+              <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aboutus_view.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/aboutus_view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
-              <folding>
-                <element signature="e#3464#4019#0#HTML" />
-                <element signature="e#4038#4594#0#HTML" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="discover_list_view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/discover_list_view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/.env">
+      <file leaf-file-name="term_of_use.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/footer_views/term_of_use.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="4" selection-start-line="14" selection-end-line="14" selection-end-column="4" />
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/gregory_aparments/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-            </state>
-          </provider>
+      <file leaf-file-name="room_detail_view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/room_detail_view.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -125,7 +89,6 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/.gitignore" />
-        <option value="$PROJECT_DIR$/app/frontend/templates/gr/index.html" />
         <option value="$PROJECT_DIR$/app/frontend/templates/gr/discover_list_view.html" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/.env" />
@@ -133,6 +96,24 @@
         <option value="$PROJECT_DIR$/app/gregory_aparments/settings.py" />
         <option value="$PROJECT_DIR$/app/frontend/templates/gr/contact.html" />
         <option value="$PROJECT_DIR$/app/frontend/templates/gr/aboutus_view.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/eng/aboutus_view.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/eng/about_us_view.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/include/room_card_eng.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/eng/room_list_view.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/eng/room_detail_view.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/include/head.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/include/destination_card_eng.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/include/js.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/include/navbar.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/include/navbar_eng.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/eng/discover_list_view.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/eng/index.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/eng/discover_detail_view.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/include/room_card.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/include/destinaiton_card_gr.html" />
+        <option value="$PROJECT_DIR$/app/frontend/views.py" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/gr/index.html" />
+        <option value="$PROJECT_DIR$/app/frontend/templates/gr/footer_views/term_of_use.html" />
       </list>
     </option>
   </component>
@@ -146,9 +127,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-549" />
-    <option name="y" value="204" />
-    <option name="width" value="1936" />
+    <option name="x" value="760" />
+    <option name="y" value="264" />
+    <option name="width" value="976" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
@@ -156,7 +137,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,15 +144,52 @@
               <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="gr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="gr" type="462c0819:PsiDirectoryNode" />
+              <item name="footer_views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -181,6 +198,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\chrisanthi-hotel\app\frontend\static\my_photos" />
       <recent name="D:\projects\gregory-aparments-docker\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\chrisanthi-hotel\app\frontend\static\my_photos" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -210,6 +230,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -240,14 +261,36 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="jinja2-line">
+          <url>file://$PROJECT_DIR$/app/frontend/templates/eng/room_list_view.html</url>
+          <line>35</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/gregory_aparments/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/frontend/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -290,9 +333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -307,9 +347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="12" column="29" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -354,17 +391,24 @@
     <entry file="file://$PROJECT_DIR$/docker-compose.staging.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/discover_list_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/gregory_aparments/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="27" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -375,57 +419,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/discover_list_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/gregory_aparments/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="90" column="36" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="98" column="70" selection-start-line="98" selection-start-column="70" selection-end-line="98" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="298" column="24" lean-forward="true" selection-start-line="253" selection-start-column="17" selection-end-line="298" selection-end-column="24" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="549">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/aboutus_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
+        <state relative-caret-position="549">
           <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
-          <folding>
-            <element signature="e#3464#4019#0#HTML" />
-            <element signature="e#4038#4594#0#HTML" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="98" column="70" selection-start-line="98" selection-start-column="70" selection-end-line="98" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/include/room_card_eng.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/eng/room_list_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="61" column="14" lean-forward="true" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/eng/about_us_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/eng/room_detail_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/newsletter/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/newsletter/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/include/js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/include/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/include/navbar_eng.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/include/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/eng/discover_list_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/eng/discover_detail_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/eng/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="110" column="44" lean-forward="true" selection-start-line="66" selection-start-column="27" selection-end-line="110" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/views_eng.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/include/room_card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/include/destination_card_eng.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/include/destinaiton_card_gr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/newsletter/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="98" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/room_detail_view.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/footer_views/term_of_use.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
         </state>
       </provider>
     </entry>

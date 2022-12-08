@@ -18,7 +18,7 @@
         <a href="{{ room.get_absolute_url }}">
             <h3 class="knsl-mb-20">{{ room }}</h3>
         </a>
-        <div class="knsl-text-light knsl-text-sm knsl-mb-20">Libero non aut dignissimos optio hic laudantium ex maiores enim et consequatur corrupti omnis.</div>
+        <div class="knsl-text-light knsl-text-sm knsl-mb-20">{{ root.text }}</div>
         <div class="knsl-card-bottom">
             {% comment %}<div class="knsl-price">$175.0<span>/night</span></div> {% endcomment %}
             <a href="{{ room.get_absolute_url }}" class="knsl-btn"><img src="{% static 'img/icons/bookmark.svg' %}" alt="icon">Book now</a>

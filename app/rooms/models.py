@@ -33,6 +33,7 @@ class Room(models.Model):
     bed_size_eng = models.CharField(max_length=1, default='1', choices=BED_OPTIONS_ENG, verbose_name='ΠΕΡΙΓΡΑΦΗ ΚΡΕΒΑΤΙΩΝ ENG')
     webatelier_link = models.URLField(blank=True,)
     slug = models.SlugField(blank=True, null=True, allow_unicode=True, max_length=240, db_index=True)
+    location = models.TextField(blank=True, null=True)
 
     class Meta:
         verbose_name_plural = 'ΔΩΜΑΤΙΑ'
@@ -45,6 +46,9 @@ class Room(models.Model):
         qs = self.images.filter(is_primary=True)
         return qs.first().image if qs.exists() else None
 
+    def my_images(self):
+        return self.images.filter(is_primary=False)
+
     def get_absolute_url(self):
         return reverse('room_detail_gr', kwargs={'slug': self.slug})
 
@@ -52,41 +56,13 @@ class Room(models.Model):
         return reverse('room_detail_eng', kwargs={'slug': self.slug})
 
 
-class CharacteristicsCategory(models.Model):
-    active = models.BooleanField(default=True)
-    title = models.CharField(max_length=200, unique=True, verbose_name='ΤΙΤΛΟΣ')
-    title_eng = models.CharField(max_length=200, unique=True, verbose_name='ΤΙΤΛΟΣ ENG')
-
-    class Meta:
-        verbose_name = 'ΚΑΤΗΓΟΡΙΑ'
-        verbose_name_plural = 'ΚΑΤΗΓΟΡΙΑ ΧΑΡΑΚΤΗΡΙΣΤΙΚΩΝ'
-
-    def __str__(self):
-        return self.title
-
-
-class CharTitle(models.Model):
-    title = models.CharField(max_length=200, unique=True, verbose_name='ΤΙΤΛΟΣ')
-    title_eng = models.CharField(max_length=200, unique=True, verbose_name='ΤΙΤΛΟΣ')
-    category = models.ForeignKey(CharacteristicsCategory, on_delete=models.CASCADE,
-                                 null=True,
-                                 verbose_name='ΚΑΤΗΓΟΡΙΑ'
-                                 )
-
-    class Meta:
-        verbose_name_plural = 'ΧΑΡΑΚΤΗΡΙΣΤΙΚΑ'
-        verbose_name = 'ΧΑΡΑΚΤΗΡΙΣΤΙΚΟ'
-
-    def __str__(self):
-        return self.title
-
-
 class Characteristic(models.Model):
-    title = models.ForeignKey(CharTitle, on_delete=models.CASCADE, verbose_name='ΤΙΤΛΟΣ')
-    rooms = models.ForeignKey(Room, on_delete=models.CASCADE, null=True, verbose_name='ΔΩΜΑΤΙΟ')
+    title = models.CharField(max_length=220, verbose_name='ΤΙΤΛΟΣ', null=True)
+    title_eng = models.CharField(max_length=220, verbose_name='ΤΙΤΛΟΣ', null=True)
+    rooms = models.ManyToManyField(Room, null=True, verbose_name='ΔΩΜΑΤΙΟ', related_name='chars')
 
     def __str__(self):
-        return self.title.title
+        return self.title
 
     class Meta:
         verbose_name_plural = 'ΧΑΡΑΚΤΗΡΙΣΤΙΚΑ ΠΡΟΪΌΝΤΟΣ'

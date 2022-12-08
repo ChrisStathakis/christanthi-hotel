@@ -20,18 +20,16 @@ class ContactForm(BaseForm, forms.ModelForm):
 
     class Meta:
         model = Contact
-        fields = ['email', 'title', 'name','category', 'phone', 'text']
+        fields = ['email', 'title', 'name', 'phone', 'text']
 
 
 class ContactFormEng(BaseForm, forms.ModelForm):
-    category = forms.ChoiceField(required=True, choices=CATEGORY_TYPES_ENG, label='Category')
 
     class Meta:
         model = Contact
-        fields = ['email', 'title', 'category', 'phone', 'text']
+        fields = ['email', 'title',  'phone', 'text']
         labels = {
             'title': 'Title',
-            'category': 'Category',
             'phone': 'Phone',
             'text': 'Message',
             'name': 'Name'

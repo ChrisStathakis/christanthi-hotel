@@ -1,0 +1,145 @@
+{% extends 'eng/index.html' %} {% load static %}
+
+{% block content %}
+    {% include 'include/navbar_eng.html' %}
+
+     <!-- banner -->
+    <section class="knsl-banner-simple knsl-transition-bottom">
+      <img src="{% static 'img/palm.svg' %}" class="knsl-deco-left" alt="palm">
+      <img src="{% static 'img/palm.svg' %}" class="knsl-deco-right" alt="palm">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <div class="knsl-center knsl-title-frame">
+              <h1 class="knsl-mb-20 knsl-h1-inner">Info</h1>
+              <p class="knsl-mb-30">Consectetur adipisicing elit. Doloremque fuga tempora at esse sit sapiente adipisci, repellat ad numquam quam eaque soluta velit repellendus, impedit ullam inventore. Dicta, ad, veniam.</p>
+              <ul class="knsl-breadcrumbs">
+                <li><a href="{% url 'homepage_gr' %}">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+                <li><span>FAQ</span></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- faq -->
+    <div class="container knsl-p-100-100">
+      <div class="row" data-sticky-container>
+
+        <div class="col-lg-3">
+
+
+
+        </div>
+        <div class="col-lg-9">
+          <section>
+
+            <div id="accordion">
+
+              <h3 class="knsl-mb-30">Cookies</h3>
+
+              <div class="knsl-faq knsl-mb-60" id="faq-1">
+
+                <div class="card">
+                  <div class="card-header" id="knsl-faqHeading-1">
+                    <div class="mb-0">
+                      <div class="knsl-faq-title" data-toggle="collapse" data-target="#knsl-faqCollapse-1" data-aria-expanded="true" data-aria-controls="knsl-faqCollapse-1">
+                        <span class="badge">1</span>Cookies
+                      </div>
+                    </div>
+                  </div>
+                  <div id="knsl-faqCollapse-1" class="collapse" aria-labelledby="knsl-faqHeading-1" data-parent="#accordion">
+                    <div class="knsl-card-body">
+                      <p>Τα «cookies» χρησιμοποιούνται με σκοπό τη βελτίωση της απόδοσης χρήσης του Ιστότοπου, καθώς και την εμπειρία περιήγησης του επισκέπτη.
+                          Πρόκειται για μικρά αρχεία κειμένου με πληροφορίες, που μια ιστοσελίδα (συγκεκριμένα ο διακομιστής ιστού – web server) αποθηκεύει στον υπολογιστή ενός χρήστη,
+                          χωρίς να λαμβάνουν γνώση οποιουδήποτε εγγράφου ή αρχείου από τον υπολογιστή του χρήστη. Τα cookies περιέχουν κάποιες πληροφορίες, όπως η γλώσσα χρήσης,
+                          το μέγεθος γραμματοσειράς και άλλες προτιμήσεις απεικόνισης. Κάθε φορά που ο χρήστης συνδέεται σε μια ιστοσελίδα, η τελευταία ανακτά τις εν λόγω πληροφορίες
+                          και προσφέρει στο χρήστη σχετικές με αυτές υπηρεσίες. Ποια cookies χρησιμοποιούμε; Απαραίτητα Cookies (Necessary Cookies): Είναι απολύτως αναγκαία για τη λειτουργία του Ιστότοπου,
+                          καθώς σας επιτρέπουν να περιηγείστε σε αυτόν και να χρησιμοποιείτε τις υπηρεσίες του. Σε περίπτωση που επιλέξετε να τα απενεργοποιήσετε,
+                          δεν θα μπορείτε να έχετε πρόσβαση σε όλο το περιεχόμενο του Ιστοτόπου. Στατιστικά Cookies (Statistic Cookies): Τα cookies στατιστικών συγκεντρώνουν
+                          πληροφορίες σχετικά με τη συμπεριφορά της πλοήγησής σας στον Ιστότοπο, όπως ποιες σελίδες του γίνονται αντικείμενο συχνών επισκέψεων και αν λαμβάνετε
+                          μηνύματα σφάλματος. Μέσω αυτού είμαστε σε θέση να κάνουμε τη δομή, την πλοήγηση και το περιεχόμενο του ιστοτόπου όσο το δυνατόν πιο φιλικά προς εσάς.
+                          Ενδέχεται να χρησιμοποιήσουμε λογισμικό, όπως το Google Analytics, προκειμένου να αναλύσουμε τη χρήση των σελίδων, τις αλληλεπιδράσεις των σελίδων και
+                          τις διαδρομές που ακολουθούνται μέσω των ιστοτόπων μας. Αυτά είναι γνωστά ως «website metrics» ή «analytics». Το Google Analytics είναι μια διαδικτυακή υπηρεσία
+                          ανάλυσης που προσφέρεται από τη Google Inc. (Google). Το Google Analytics χρησιμοποιεί cookies για να αναλύει τη χρήση του ιστοτόπου από τους χρήστες.
+                          Η Google χρησιμοποιεί συγκεντρωτικά στατιστικά στοιχεία προκειμένου να δώσει στην Εταιρεία μια εικόνα για τον τρόπο που οι χρήστες χρησιμοποιούν τον Ιστότοπο.
+                          Αν δεν δεχθείτε αυτά τα cookies, δεν θα επηρεαστεί η λειτουργικότητα του ιστοτόπου, ούτε θα περιοριστεί η πρόσβασή σας σε περιεχόμενο του,
+                          ωστόσο αυτά μας δίνουν πολύτιμες πληροφορίες που μας επιτρέπουν να βελτιώσουμε τον Ιστότοπο, τα προϊόντα και τις υπηρεσίες που προσφέρουμε.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="knsl-faqHeading-2">
+                    <div class="mb-0">
+                      <div class="knsl-faq-title" data-toggle="collapse" data-target="#knsl-faqCollapse-2" data-aria-expanded="false" data-aria-controls="knsl-faqCollapse-2">
+                        <span class="badge">2</span> ΟΡΙΣΜΌΣ ΤΩΝ ΠΡΟΣΩΠΙΚΏΝ ΔΕΔΟΜΈΝΩΝ ΚΑΙ ΤΗΣ ΕΠΕΞΕΡΓΑΣΊΑΣ ΤΟΥΣ
+                      </div>
+                    </div>
+                  </div>
+                  <div id="knsl-faqCollapse-2" class="collapse" aria-labelledby="knsl-faqHeading-2" data-parent="#accordion">
+                    <div class="knsl-card-body">
+                      <p>Προσωπικά δεδομένα είναι πληροφορίες, όπως ονοματεπώνυμο, ταχυδρομική διεύθυνση, ηλεκτρονική διεύθυνση, τηλέφωνο επικοινωνίας,
+                          κ.ά., οι οποίες προσδιορίζουν ή μπορούν συνδυαστικά με άλλες πληροφορίες να προσδιορίσουν την ταυτότητα ενός φυσικού προσώπου,
+                          επισκέπτη/ χρήστη του Ιστότοπου ή της Σελίδας Facebook. Επεξεργασία προσωπικών δεδομένων αποτελεί η συλλογή, καταχώρηση, οργάνωση,
+                          αποθήκευση, προσαρμογή, μεταβολή, ανάκτηση, αναζήτηση πληροφοριών, χρήση, διαβίβαση σε τρίτους, διάδοση, συσχέτιση, συνδυασμός, περιορισμός,
+                          διαγραφή και καταστροφή προσωπικών δεδομένων φυσικών προσώπων. Η επεξεργασία περιλαμβάνει κάθε πράξη,
+                          που πραγματοποιείται από τον Υπεύθυνο Επεξεργασίας σε δεδομένα προσωπικού χαρακτήρα των χρηστών του Ιστότοπου ή της Σελίδας.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="knsl-faqHeading-3">
+                    <div class="mb-0">
+                      <div class="knsl-faq-title" data-toggle="collapse" data-target="#knsl-faqCollapse-3" data-aria-expanded="false" data-aria-controls="knsl-faqCollapse-3">
+                        <span class="badge">3</span>ΣΥΛΛΟΓΉ ΤΩΝ ΠΡΟΣΩΠΙΚΏΝ ΣΑΣ ΔΕΔΟΜΈΝΩΝ
+                      </div>
+                    </div>
+                  </div>
+                  <div id="knsl-faqCollapse-3" class="collapse" aria-labelledby="knsl-faqHeading-3" data-parent="#accordion">
+                    <div class="knsl-card-body">
+                      <p>ΟΡΙΣΜΌΣ ΤΩΝ ΠΡΟΣΩΠΙΚΏΝ ΔΕΔΟΜΈΝΩΝ ΚΑΙ ΤΗΣ ΕΠΕΞΕΡΓΑΣΊΑΣ ΤΟΥΣ
+Προσωπικά δεδομένα είναι πληροφορίες, όπως ονοματεπώνυμο, ταχυδρομική διεύθυνση, ηλεκτρονική διεύθυνση, τηλέφωνο επικοινωνίας, κ.ά.,
+                          οι οποίες προσδιορίζουν ή μπορούν συνδυαστικά με άλλες πληροφορίες να προσδιορίσουν την ταυτότητα ενός φυσικού προσώπου,
+                          επισκέπτη/ χρήστη του Ιστότοπου ή της Σελίδας Facebook. Επεξεργασία προσωπικών δεδομένων αποτελεί η συλλογή, καταχώρηση, οργάνωση,
+                          αποθήκευση, προσαρμογή, μεταβολή, ανάκτηση, αναζήτηση πληροφοριών, χρήση, διαβίβαση σε τρίτους, διάδοση, συσχέτιση, συνδυασμός, περιορισμός,
+                          διαγραφή και καταστροφή προσωπικών δεδομένων φυσικών προσώπων.
+                          Η επεξεργασία περιλαμβάνει κάθε πράξη, που πραγματοποιείται από τον Υπεύθυνο Επεξεργασίας σε δεδομένα προσωπικού χαρακτήρα των χρηστών του Ιστότοπου ή της Σελίδας.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="knsl-faqHeading-4">
+                    <div class="mb-0">
+                      <div class="knsl-faq-title" data-toggle="collapse" data-target="#knsl-faqCollapse-4" data-aria-expanded="false" data-aria-controls="knsl-faqCollapse-4">
+                        <span class="badge">4</span> ΥΠΕΎΘΥΝΟΣ ΕΠΕΞΕΡΓΑΣΊΑΣ
+                      </div>
+                    </div>
+                  </div>
+                  <div id="knsl-faqCollapse-4" class="collapse" aria-labelledby="knsl-faqHeading-4" data-parent="#accordion">
+                    <div class="knsl-card-body">
+                      <p>Υπεύθυνος για την επεξεργασία των δεδομένων σας είναι , ο οποίος είναι και δικαιούχος χρήσης του παρόντος δικτυακού τόπου.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+    <!-- faq end -->
+
+
+{% endblock %}

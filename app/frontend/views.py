@@ -19,7 +19,6 @@ class HomepageView(TemplateView):
         context['rooms'] = Room.objects.filter(active=True)
         context['eng_link'] = reverse('homepage_eng')
         context['discovers'] = Discover.objects.filter(active=True, is_favorite=True)[:3]
-        context['discovers_2'] = Discover.objects.filter(active=True, is_favorite=True)[3:6]
         return context
 
 
@@ -57,6 +56,7 @@ class RoomDetailView(DetailView):
         context['page_title'] = self.object.title
         # context['keywords'] = ''
         context['eng_link'] = self.object.get_absolute_url_eng
+        print('here!@', self.object.images.all())
         return context
 
 

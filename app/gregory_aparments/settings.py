@@ -25,11 +25,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG')
-REAL_DB = False  # config('REAL_DB')
-PRODUCTION = False  # config('PRODUCTION')
+DEBUG = config('DEBUG_')
+REAL_DB = config('REAL_DB_')
+PRODUCTION = config('PRODUCTION_')
 
-ALLOWED_HOSTS = ['demo-gregory-houses.herokuapp.com', 'www.gregoryshouse.com'] if PRODUCTION else ['*']
+ALLOWED_HOSTS = ['demo-gregory-houses.herokuapp.com', 'www.gregoryshouse.com', '127.0.0.1'] if PRODUCTION else ['127.0.0.1']
 
 if PRODUCTION:
     SESSION_COOKIE_SECURE = True

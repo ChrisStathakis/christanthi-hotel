@@ -1,0 +1,140 @@
+{% extends 'eng/index.html' %} {% load  static %}
+
+{% block content %}
+    <div class="knsl-app">
+        {% include 'include/navbar_eng.html' %}
+          <!-- banner -->
+    <section class="knsl-banner-simple knsl-transition-bottom">
+      <img src="{% static 'img/palm.svg' %}" class="knsl-deco-left" alt="palm">
+      <img src="{% static 'img/palm.svg' %}" class="knsl-deco-right" alt="palm">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <div class="knsl-center knsl-title-frame">
+              <h1 class="knsl-mb-20 knsl-h1-inner">ABOUT US</h1>
+              <p class="knsl-mb-30"></p>
+              <ul class="knsl-breadcrumbs">
+                <li><a href="{% url 'homepage_eng' %}">HOMEPAGE</a></li>
+                <li><span>ABOUT US</span></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+        <!-- banner end -->
+
+
+
+    <!-- video -->
+    <section class="knsl-p-0-100">
+
+      <div class="container">
+
+        <div class="knsl-about-card">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="knsl-about-text">
+                <div class="knsl-title-frame">
+                  <h2 class="knsl-mb-20">Menexes Hotel</h2>
+                  <p class="knsl-mb-30">
+                      In beautiful Monemvasia, a true love<br>
+                        He comes to us from the old days, much to teach us<br>
+                        They adorn our beautiful history with grace<br>
+                        Fiorelli and Melica our beautiful couple<br>
+                        Where the kitapias wrote their love in the castle<br>
+                        And it kindled and covered the highest palaces<br>
+                        We will also drink malvasia amber at their weddings<br>
+                        My beautiful Monemvasia, the pride of the world<br>
+                        For the old to remember and the young to learn<br>
+                        There is no power more powerful in this world<br>
+                        From their love she decorated the castle<br>
+                        Where we will all have as our bright star<br>
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="">
+                <img src="{% static 'my_photos/location_1.jpg' %}" alt="cover">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- video end -->
+
+    <!-- team -->
+        <section class="knsl-p-0-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="knsl-center knsl-title-frame knsl-mb-100">
+                            <h2 class="knsl-mb-20">OUR PHOTOS</h2>
+                            <p>Selected photos from our hotel and the surrounding area.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+
+                    <!-- service card -->
+                    <div class="knsl-ath-card knsl-scroll-animation">
+                      <div class="knsl-cover-frame">
+                        <img src="{% static 'my_photos/location_1.jpg' %}" alt="cover">
+                      </div>
+                      <div class="knsl-card-description">
+                        <h3 class="knsl-mb-10">View</h3>
+                        <p>Monemvasia Castle</p>
+                      </div>
+                    </div>
+                    <!-- service card end -->
+
+                    </div>
+                    <div class="col-lg-4">
+
+                    <!-- service card -->
+                    <div class="knsl-ath-card knsl-scroll-animation">
+                      <div class="knsl-cover-frame">
+                        <img src="{% static 'my_photos/location_2.jpg' %}" alt="cover">
+                      </div>
+                      <div class="knsl-card-description">
+                        <h3 class="knsl-mb-10">Castle</h3>
+
+                      </div>
+                    </div>
+                    <!-- service card end -->
+
+                  </div>
+                    <div class="col-lg-4">
+
+                    <!-- service card -->
+                    <div class="knsl-ath-card knsl-scroll-animation">
+                      <div class="knsl-cover-frame">
+                        <img src="{% static 'my_photos/monemvasia_thea.jpg' %}" alt="cover">
+                      </div>
+                      <div class="knsl-card-description">
+                        <h3 class="knsl-mb-10">Castle</h3>
+                          <p> Our balcony</p>
+
+                      </div>
+                    </div>
+                    <!-- service card end -->
+
+                  </div>
+            </div>
+            </div>
+        </section>
+    <!-- team end -->
+
+
+  </div>
+  <!-- page wrapper end -->
+
+{% endblock %}

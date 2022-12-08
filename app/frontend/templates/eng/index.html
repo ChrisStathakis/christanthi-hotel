@@ -1,26 +1,41 @@
 <!DOCTYPE html> {% load static %}
 <html lang="zxx">
 
-{% include  'include/head.html' %}
-
+<head>
+    {% include  'include/head.html' %}
+     {% block extra_cs %} {% endblock %}
+    <!-- page title -->
+    <title>  Menexes | {{ page_title }}</title>
+</head>
 
 <body>
+{% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <!-- Modal -->
+                    <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Message</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            {{ message }}
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+            {% endfor %}
+        </ul>
+{% endif %}
 {% block content %}
     <!-- page wrapper -->
     <div class="knsl-app">
             {% include 'include/navbar_eng.html' %}
-
-            <!-- preloader -->
-            <div class="knsl-preloader-frame">
-              <div class="knsl-preloader">
-                <img src="{% static 'img/logo.svg' %}" alt="Kinsley">
-                <div class="knsl-preloader-progress">
-                  <div class="knsl-preloader-bar"></div>
-                </div>
-                <div><span class="knsl-preloader-number" data-count="101">0</span>%</div>
-              </div>
-            </div>
-            <!-- preloader end -->
 
             <!-- datepicker frame -->
             <div class="knsl-datepicker-place"></div>
@@ -28,7 +43,7 @@
             <!-- banner -->
             <section class="knsl-banner">
                       <div class="knsl-cover-frame">
-                        <img src="{% static 'my_photos/banner1.jpg' %}" alt="banner" class="knsl-parallax">
+                        <img src="{% static 'my_photos/test_1.jpg' %}" alt="banner" class="knsl-parallax">
                       </div>
                       <div class="knsl-overlay"></div>
 
@@ -36,18 +51,12 @@
                         <div class="container">
                           <div class="knsl-main-title">
                             <div class="knsl-white">
-                              <ul class="knsl-stars">
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                              </ul>
                               <!-- main-title -->
-                              <h1 class="knsl-center knsl-mb-10">Welcome to Kinsley</h1>
-                              <div class="knsl-mb-30 knsl-center">Deleniti nostrum laboriosam praesentium quasi quam voluptate.</div>
+                              <h1 class="knsl-center knsl-mb-10">Welcome to Menexes</h1>
+                              <div class="knsl-mb-30 knsl-center">You can find us in Monemvasia Kastro</div>
                             </div>
                           </div>
+                            {% comment %}
                           <div class="knsl-book-form knsl-book-form-2">
                             <form>
                               <div class="row align-items-center">
@@ -91,10 +100,7 @@
                               </div>
                             </form>
                           </div>
-                          <div class="knsl-scroll-hint-frame">
-                            <div class="knsl-white knsl-mb-20">Scroll down</div>
-                            <a href="#knsl-triger-1" class="knsl-scroll-hint knsk-s-s"></a>
-                          </div>
+                            {% endcomment %}
                         </div>
                       </div>
                     </section>
@@ -109,46 +115,28 @@
                 <div class="knsl-features-card" style="margin-top: -80px;">
 
                   <div class="row">
-                    <div class="col-6 col-lg-3">
+                    <div class="col-6 col-lg-6">
 
                       <!-- icon box -->
                       <div class="knsl-icon-box">
-                        <img src="{% static 'img/features/1.svg' %}" alt="icon" class="knsl-mb-10">
-                        <h5>Airport transfer</h5>
+                        <i class="fa fa-phone fa-3x" style="margin-bottom: 3%"></i>
+                        <h5>Phone: 6939899187</h5>
                       </div>
                       <!-- icon box end -->
 
                     </div>
-                    <div class="col-6 col-lg-3">
+                    <div class="col-6 col-lg-6">
 
                       <!-- icon box -->
                       <div class="knsl-icon-box">
-                        <img src="{% static 'img/features/2.svg' %}" alt="icon" class="knsl-mb-10">
-                        <h5>All inclusive</h5>
+                        <i class="fa fa-mail-bulk fa-3x" style="margin-bottom: 3%"></i>
+                        <h5>Email: xrysman@gmail.com</h5>
                       </div>
                       <!-- icon box end -->
 
                     </div>
-                    <div class="col-6 col-lg-3">
 
-                      <!-- icon box -->
-                      <div class="knsl-icon-box">
-                        <img src="{% static 'img/features/3.svg' %}" alt="icon" class="knsl-mb-10">
-                        <h5>Air-conditioned</h5>
-                      </div>
-                      <!-- icon box end -->
 
-                    </div>
-                    <div class="col-6 col-lg-3">
-
-                      <!-- icon box -->
-                      <div class="knsl-icon-box">
-                        <img src="{% static 'img/features/4.svg' %}" alt="icon" class="knsl-mb-10">
-                        <h5>Under protection</h5>
-                      </div>
-                      <!-- icon box end -->
-
-                    </div>
                   </div>
 
                 </div>
@@ -166,29 +154,39 @@
                   <div class="row no-gutters">
                     <div class="col-lg-6">
                       <div class="knsl-about-photo">
-                        <img src="{% static 'my_photos/banner2.jpg' %}" alt="cover">
+                        <img src="{% static 'my_photos/about_us.jpg' %}" alt="cover">
                       </div>
                     </div>
                     <div class="col-lg-6 align-self-center">
                       <div class="knsl-about-text">
                         <div class="knsl-title-frame">
-                          <h2 class="knsl-mb-20">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</h2>
-                          <p class="knsl-mb-30">Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem. Laborum accusantium libero commodi id officiis itaque esse adipisci, necessitatibus asperiores, illo odio.</p>
-                          <a href="{% url 'about_us_gr' %}" class="knsl-btn knsl-btn-md">More about us</a>
+                          <h2 class="knsl-mb-20">About us</h2>
+                          <p class="knsl-mb-30">
+                            In beautiful Monemvasia, a true love<br>
+                            He comes to us from the old days, much to teach us<br>
+                            They adorn our beautiful history with grace<br>
+                            Fiorelli and Melica our beautiful couple<br>
+                            Where the kitapias wrote their love in the castle<br>
+                            And it kindled and covered the highest palaces<br>
+                            We will also drink malvasia amber at their weddings
+                            My beautiful Monemvasia, the pride of the world<br>
+                          </p>
+                          <a href="{% url 'about_us_eng' %}" class="knsl-btn knsl-btn-md">Learn more..</a>
                         </div>
                       </div>
                     </div>
                     <div class="col-lg-6 order-lg-2">
                       <div class="knsl-about-photo">
-                        <img src="{% static 'my_photos/gerakas_2.jpg' %}" alt="cover">
+                        <img src="{% static 'my_photos/destinations.jpg' %}" alt="cover">
                       </div>
                     </div>
                     <div class="col-lg-6 align-self-center">
                       <div class="knsl-about-text">
                         <div class="knsl-title-frame">
-                          <h2 class="knsl-mb-20">ΠΡΟΟΡΙΣΜΟΙ</h2>
-                          <p class="knsl-mb-30">Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem. Laborum accusantium libero commodi id officiis itaque esse adipisci, necessitatibus asperiores, illo odio.</p>
-                          <a href="{% url 'discover_list_gr' %}" class="knsl-btn knsl-btn-md">Choose a room</a>
+                          <h2 class="knsl-mb-20">Destinations</h2>
+                          <p class="knsl-mb-30">The Castle City of Monemvasia is not a destination, it is an experience.
+                              That's why we gathered some of the best destinations to experience it.</p>
+                          <a href="{% url 'discover_list_eng' %}" class="knsl-btn knsl-btn-md">Learn more...</a>
                         </div>
                       </div>
                     </div>
@@ -208,9 +206,9 @@
                   <div class="col-lg-12">
 
                     <div class="knsl-center knsl-title-frame knsl-scroll-animation knsl-mb-100">
-                      <h2 class="knsl-mb-20">ΤΑ ΔΩΜΑΤΙΑ ΜΑΣ</h2>
+                      <h2 class="knsl-mb-20">Rooms</h2>
                       <p class="knsl-mb-30">Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem. Laborum accusantium libero commodi id officiis itaque esse adipisci, necessitatibus asperiores, illo odio.</p>
-                      <a href="{% url 'room_list_gr' %}" class="knsl-btn knsl-btn-md">ΔΩΜΑΤΙΑ</a>
+                      <a href="{% url 'room_list_eng' %}" class="knsl-btn knsl-btn-md">More</a>
                     </div>
 
                   </div>
@@ -218,7 +216,7 @@
                     <div class="swiper-container knsl-uni-slider">
                       <div class="swiper-wrapper">
                           {% for room in rooms %}
-                              <div class="swiper-slide">{% include 'include/room_card.html' %}</div>
+                              <div class="swiper-slide">{% include 'include/room_card_eng.html' %}</div>
                           {% endfor %}
                       </div>
                     </div>
@@ -245,58 +243,18 @@
                   <div class="col-lg-12">
 
                     <div class="knsl-center knsl-title-frame knsl-scroll-animation knsl-mb-100">
-                      <h2 class="knsl-mb-20">ΠΡΟΤΑΣΕΙΣ</h2>
+                      <h2 class="knsl-mb-20">Destinations</h2>
                       <p class="knsl-mb-30">Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem. Laborum accusantium libero commodi id officiis itaque esse adipisci, necessitatibus asperiores, illo odio.</p>
-                      <a href="#." class="knsl-btn knsl-btn-md">ΠΡΟΟΡΙΣΜΟΙ</a>
+                      <a href="{% url 'discover_list_eng' %}" class="knsl-btn knsl-btn-md">More</a>
                     </div>
 
                   </div>
-                  <div class="col-lg-4">
+                    {% for ele in discovers %}
+                        <div class="col-lg-4">
+                            {% include 'include/destination_card_eng.html' %}
+                        </div>
+                    {% endfor %}
 
-                    <!-- service card -->
-                    <div class="knsl-ath-card knsl-scroll-animation">
-                      <div class="knsl-cover-frame">
-                        <img src="{% static 'my_photos/location_1.jpg' %}" alt="cover">
-                      </div>
-                      <div class="knsl-card-description">
-                        <h3 class="knsl-mb-10">Lounge bar</h3>
-                        <p>Officiis deleniti, veritatis laudantium! Qudantium dolorem!</p>
-                      </div>
-                    </div>
-                    <!-- service card end -->
-
-                  </div>
-                  <div class="col-lg-4">
-
-                    <!-- service card -->
-                    <div class="knsl-ath-card knsl-scroll-animation">
-                      <div class="knsl-cover-frame">
-                        <img src="{% static 'my_photos/location_2.jpg' %}" alt="cover">
-                      </div>
-                      <div class="knsl-card-description">
-                        <h3 class="knsl-mb-10">Four pools</h3>
-
-                      </div>
-                    </div>
-                    <!-- service card end -->
-
-                  </div>
-                  <div class="col-lg-4">
-
-                    <!-- service card -->
-                    <div class="knsl-ath-card knsl-scroll-animation">
-                      <div class="knsl-cover-frame">
-                        <img src="{% static 'my_photos/location_3.jpg' %}" alt="cover">
-                      </div>
-                      <div class="knsl-card-description">
-                        <h3 class="knsl-mb-10">Restaurant</h3>
-
-
-                      </div>
-                    </div>
-                    <!-- service card end -->
-
-                  </div>
                 </div>
               </div>
             </section>
@@ -308,13 +266,16 @@
               <img src="{% static 'img/palm.svg' %}" class="knsl-deco-right" alt="palm">
               <div class="container">
                 <div class="row">
-                  <div class="col-lg-12">
+                    <div class="col-3"></div>
+                  <div class="col-lg-6">
 
                     <div class="knsl-center knsl-title-frame knsl-scroll-animation knsl-mb-100">
                       <h2 class="knsl-mb-20">Our Newsletter</h2>
-                      <p class="knsl-mb-30">Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem. Laborum accusantium libero commodi id officiis itaque esse adipisci, necessitatibus asperiores, illo odio.</p>
-                        <form method="post" class="form">
-                            <input type="text" placeholder="Email.." class="form-control">
+                      <p class="knsl-mb-30">Learn first our news!</p>
+                        <form method="post" class="form" action="{% url 'newsletter:newsletter_valid_form_eng' %}">
+                            {% csrf_token  %}
+                            <input name="email" type="email" placeholder="Email.." class="form-control" required>
+                            <button type="submit" class="btn-success btn">Subscribe </button>
                         </form>
                     </div>
 
@@ -329,12 +290,12 @@
 
 
 
-          {% include 'include/footer.html' %}
 
           </div>
           <!-- page wrapper end -->
 
   {% endblock %}
+{% include 'include/footer_eng.html' %}
 {% include 'include/js.html' %}
 </body>
 

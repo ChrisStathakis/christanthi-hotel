@@ -1,9 +1,6 @@
 {% extends 'gr/index.html' %} {% load  static %}
 
 {% block content %}
-
-    <!-- page wrapper -->
-    <div class="knsl-app">
     {% include 'include/navbar.html' %}
        <!-- banner -->
     <section class="knsl-banner-simple knsl-transition-bottom">
@@ -14,8 +11,8 @@
           <div class="col-lg-12">
 
             <div class="knsl-center knsl-title-frame">
-              <h1 class="knsl-mb-20 knsl-h1-inner">Choose your Room</h1>
-              <p class="knsl-mb-30">Laborum accusantium libero commodi. Voluptate consequatur itaque expedita accusamus impedit perspiciatis asperiores necessitatibus assumenda magnam ipsa.</p>
+              <h1 class="knsl-mb-20 knsl-h1-inner">ΔΕΙΤΕ ΤΑ ΔΩΜΑΤΙΑ ΜΑΣ</h1>
+                <br/>
               <ul class="knsl-breadcrumbs">
                 <li><a href="{% url 'homepage_gr' %}">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
                 <li><span>ΔΩΜΑΤΙΑ</span></li>
@@ -58,15 +55,11 @@
         </div>
 
       </div>
+      </div>
+
     </section>
     <!-- rooms end -->
 
 
-
-
-    {% include 'include/footer.html' %}
-
-  </div>
-    <!-- page wrapper end -->
 
 {% endblock %}

@@ -1,10 +1,10 @@
-{% extends 'gr/index.html' %} {% load  static %}
+{% extends 'eng/index.html' %} {% load  static %}
 
 {% block content %}
 
     <!-- page wrapper -->
     <div class="knsl-app">
-    {% include 'include/navbar.html' %}
+    {% include 'include/navbar_eng.html' %}
        <!-- banner -->
     <section class="knsl-banner-simple knsl-transition-bottom">
       <img src="{% static 'img/palm.svg' %}" class="knsl-deco-left" alt="palm">
@@ -14,11 +14,11 @@
           <div class="col-lg-12">
 
             <div class="knsl-center knsl-title-frame">
-              <h1 class="knsl-mb-20 knsl-h1-inner">Choose your Room</h1>
-              <p class="knsl-mb-30">Laborum accusantium libero commodi. Voluptate consequatur itaque expedita accusamus impedit perspiciatis asperiores necessitatibus assumenda magnam ipsa.</p>
+              <h1 class="knsl-mb-20 knsl-h1-inner">Rooms</h1>
+              <p class="knsl-mb-30"></p>
               <ul class="knsl-breadcrumbs">
-                <li><a href="{% url 'homepage_gr' %}">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
-                <li><span>ΔΩΜΑΤΙΑ</span></li>
+                <li><a href="{% url 'homepage_eng' %}">Homepage</a></li>
+                <li><span>Rooms</span></li>
               </ul>
             </div>
 
@@ -34,12 +34,12 @@
       <div class="container">
 
           {% comment %}
-        <div class="knsl-filter knsl-mb-60">
-          <a href="#" data-filter="*" class="knsl-work-category knsl-current">All Rooms</a>
-          <a href="#" data-filter=".economy" class="knsl-work-category">Economy</a>
-          <a href="#" data-filter=".standart" class="knsl-work-category">Standart</a>
-          <a href="#" data-filter=".deluxe" class="knsl-work-category">Deluxe</a>
-        </div>
+            <div class="knsl-filter knsl-mb-60">
+              <a href="#" data-filter="*" class="knsl-work-category knsl-current">All Rooms</a>
+              <a href="#" data-filter=".economy" class="knsl-work-category">Economy</a>
+              <a href="#" data-filter=".standart" class="knsl-work-category">Standart</a>
+              <a href="#" data-filter=".deluxe" class="knsl-work-category">Deluxe</a>
+            </div>
         {% endcomment %}
 
         <div class="knsl-masonry-grid knsl-3-col">
@@ -50,7 +50,7 @@
             <div class="swiper-container knsl-uni-slider">
               <div class="swiper-wrapper">
                   {% for room in room_list %}
-                      <div class="swiper-slide">{% include 'include/room_card.html' %}</div>
+                      <div class="swiper-slide">{% include 'include/room_card_eng.html' %}</div>
                   {% endfor %}
               </div>
             </div>
@@ -58,13 +58,10 @@
         </div>
 
       </div>
+      </div>
     </section>
     <!-- rooms end -->
 
-
-
-
-    {% include 'include/footer.html' %}
 
   </div>
     <!-- page wrapper end -->

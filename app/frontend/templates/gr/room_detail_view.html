@@ -17,8 +17,8 @@
                 <div class="knsl-center knsl-title-frame">
                   <h1 class="knsl-mb-20 knsl-h1-inner">{{ room }}</h1>
                   <ul class="knsl-breadcrumbs">
-                    <li><a href="{% url 'homepage_gr' %}">Home</a></li>
-                    <li><a href="{% url 'room_list_gr' %}">Rooms</a></li>
+                    <li><a href="{% url 'homepage_gr' %}">Αρχική Σελίδα</a></li>
+                    <li><a href="{% url 'room_list_gr' %}">Δωμάτια</a></li>
                     <li><span>{{ room }}</span></li>
                   </ul>
                 </div>
@@ -35,51 +35,50 @@
         <div class="row" data-sticky-container>
           <div class="col-lg-8">
 
-            <div class="knsl-room-detail-slider-frame knsl-mb-60">
+           <div class="knsl-room-detail-slider-frame knsl-mb-60">
               <div class="swiper-container knsl-rd-slider-2 knsl-mb-10">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <a data-fancybox="gallery" href="{{ room.image.url }}" class="knsl-room-detail-photo-lg" data-swiper-parallax="-80" data-swiper-parallax-scale="1.2" data-swiper-parallax-duration="400">
-                      <img src="{{ room.image.url }}" alt="room">
+                    <a data-fancybox="gallery" href="{{ object.image.url }}" class="knsl-room-detail-photo-lg" data-swiper-parallax="-80" data-swiper-parallax-scale="1.2"
+                       data-swiper-parallax-duration="400">
+                      <img src="{{ object.image.url }}" alt="{{ object }}">
                       <span class="knsl-zoom"><i class="fas fa-search-plus"></i></span>
                     </a>
                   </div>
-                  {% for image in room.images.all %}
-                  <div class="swiper-slide">
-                    <a data-fancybox="gallery" href="{{ image.image.url }}" class="knsl-room-detail-photo-lg" data-swiper-parallax="-80" data-swiper-parallax-scale="1.2" data-swiper-parallax-duration="400">
-                      <img src="{{ image.image.url }}" alt="room">
-                      <span class="knsl-zoom"><i class="fas fa-search-plus"></i></span>
-                    </a>
-                  </div>
-                  {% endfor %}
+                    {% for image in object.my_images %}
+                          <div class="swiper-slide">
+                            <a data-fancybox="gallery" href="{{ image.image.url }}" class="knsl-room-detail-photo-lg" data-swiper-parallax="-80" data-swiper-parallax-scale="1.2"
+                               data-swiper-parallax-duration="400">
+                              <img src="{{ image.image.url }}" alt="room">
+                              <span class="knsl-zoom"><i class="fas fa-search-plus"></i></span>
+                            </a>
+                          </div>
+                    {% endfor %}
+
                 </div>
               </div>
               <div class="swiper-container knsl-rd-slider-1">
-                <div class="swiper-wrapper">
-
-                  <div class="swiper-slide">
-                    <div class="knsl-room-detail-photo-sm">
-                      <img src="{{ room.image.url }}" alt="room">
-                    </div>
-                  </div>
-                  
-                  {% for image in room.images.all %}
-                    <div class="swiper-slide">
-                      <div class="knsl-room-detail-photo-sm">
-                        <img src="img/rooms/6.jpg" alt="room">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="knsl-room-detail-photo-sm">
+                              <img src="{{ room.image.url }}" alt="room">
+                          </div>
                       </div>
-                    </div>
-                  {% endfor %}
+                      {% for image in object.my_images %}
+                          <div class="swiper-slide">
+                              <div class="knsl-room-detail-photo-sm"><img src="{{ image.image.url }}" alt="room">
+                              </div>
+                          </div>
+                        {% endfor %}
+
                 </div>
               </div>
             </div>
 
             <!-- description -->
             <section class="knsl-mb-60 knsl-scroll-animation">
-              <h3 class="knsl-mb-40">Kinsley is waiting for you!</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veniam quibusdam fugit aspernatur ratione rerum necessitatibus ipsa eligendi? Laudantium beatae aut earum ab doloribus tempore veritatis repellat natus illo, veniam
-                quibusdam fugit aspernatur cumque harum quos esse libero nesciunt, molestiae saepe, possimus a suscipit! Minima aspernatur quod maxime quis facere facilis magnam, animi, quia id nihil reiciendis laboriosam, suscipit explicabo amet
-                quasi recusandae at</p>
+              <h3 class="knsl-mb-40">{{ object }}</h3>
+              <p>{{ object.description|safe }}</p>
             </section>
             <!-- description end -->
 
@@ -93,7 +92,7 @@
 
                   <div class="knsl-map-frame knsl-mb-60">
                     <div class="knsl-lock"><i class="fas fa-lock"></i></div>
-                    <div id="map" class="knsl-map"></div>
+                    {{ object.location|safe }}
                   </div>
 
                 </div>
@@ -102,180 +101,9 @@
             <!-- map end -->
 
 
-            <!-- features -->
-            <section class="knsl-mb-60">
-              <div class="row">
-                <div class="col-lg-12">
-                  <h3 class="knsl-mb-40 knsl-scroll-animation">Amenity</h3>
-                </div>
-                <div class="col-6 col-md-3">
 
-                  <!-- icon box -->
-                  <div class="knsl-icon-box knsl-icon-box-sm knsl-scroll-animation">
-                    <img src="img/features/1.svg" alt="icon" class="knsl-mb-10">
-                    <h5>Airport transfer</h5>
-                  </div>
-                  <!-- icon box end -->
 
-                </div>
-                <div class="col-6 col-md-3">
 
-                  <!-- icon box -->
-                  <div class="knsl-icon-box knsl-icon-box-sm knsl-scroll-animation">
-                    <img src="img/features/2.svg" alt="icon" class="knsl-mb-10">
-                    <h5>All inclusive</h5>
-                  </div>
-                  <!-- icon box end -->
-
-                </div>
-                <div class="col-6 col-md-3">
-
-                  <!-- icon box -->
-                  <div class="knsl-icon-box knsl-icon-box-sm knsl-scroll-animation">
-                    <img src="img/features/3.svg" alt="icon" class="knsl-mb-10">
-                    <h5>Air-conditioned</h5>
-                  </div>
-                  <!-- icon box end -->
-
-                </div>
-                <div class="col-6 col-md-3">
-
-                  <!-- icon box -->
-                  <div class="knsl-icon-box knsl-icon-box-sm knsl-scroll-animation">
-                    <img src="img/features/4.svg" alt="icon" class="knsl-mb-10">
-                    <h5>Under protection</h5>
-                  </div>
-                  <!-- icon box end -->
-
-                </div>
-                <div class="col-6 col-md-3">
-
-                  <!-- icon box -->
-                  <div class="knsl-icon-box knsl-icon-box-sm knsl-scroll-animation">
-                    <img src="img/features/5.svg" alt="icon" class="knsl-mb-10">
-                    <h5>4 private pools</h5>
-                  </div>
-                  <!-- icon box end -->
-
-                </div>
-                <div class="col-6 col-md-3">
-
-                  <!-- icon box -->
-                  <div class="knsl-icon-box knsl-icon-box-sm knsl-scroll-animation">
-                    <img src="img/features/6.svg" alt="icon" class="knsl-mb-10">
-                    <h5>Free wi-fi</h5>
-                  </div>
-                  <!-- icon box end -->
-
-                </div>
-                <div class="col-6 col-md-3">
-
-                  <!-- icon box -->
-                  <div class="knsl-icon-box knsl-icon-box-sm knsl-scroll-animation">
-                    <img src="img/features/7.svg" alt="icon" class="knsl-mb-10">
-                    <h5>Smart TV</h5>
-                  </div>
-                  <!-- icon box end -->
-
-                </div>
-                <div class="col-6 col-md-3">
-
-                  <!-- icon box -->
-                  <div class="knsl-icon-box knsl-icon-box-sm knsl-scroll-animation">
-                    <img src="img/features/8.svg" alt="icon" class="knsl-mb-10">
-                    <h5>Laundry</h5>
-                  </div>
-                  <!-- icon box end -->
-
-                </div>
-              </div>
-            </section>
-            <!-- features end -->
-
-            <!-- services -->
-            <section class="knsl-mb-30">
-              <div class="row">
-                <div class="col-lg-12">
-                  <h3 class="knsl-mb-40 knsl-scroll-animation">Around The Hotel</h3>
-                </div>
-                <div class="col-lg-4">
-
-                  <!-- service card -->
-                  <div class="knsl-ath-card knsl-scroll-animation">
-                    <div class="knsl-cover-frame">
-                      <img src="img/services/4.jpg" alt="cover">
-                    </div>
-                    <div class="knsl-card-description">
-                      <h5>Playroom</h5>
-                    </div>
-                  </div>
-                  <!-- service card end -->
-
-                </div>
-                <div class="col-lg-4">
-
-                  <!-- service card -->
-                  <div class="knsl-ath-card knsl-scroll-animation">
-                    <div class="knsl-cover-frame">
-                      <img src="img/services/2.jpg" alt="cover">
-                    </div>
-                    <div class="knsl-card-description">
-                      <h5>Pool</h5>
-                    </div>
-                  </div>
-                  <!-- service card end -->
-
-                </div>
-                <div class="col-lg-4">
-
-                  <!-- service card -->
-                  <div class="knsl-ath-card knsl-scroll-animation">
-                    <div class="knsl-cover-frame">
-                      <img src="img/services/3.jpg" alt="cover">
-                    </div>
-                    <div class="knsl-card-description">
-                      <h5>Restaurant</h5>
-                    </div>
-                  </div>
-                  <!-- service card end -->
-
-                </div>
-              </div>
-            </section>
-            <!-- services end -->
-
-         
-
-            <section>
-              <div class="row">
-                <div class="col-lg-12">
-                  <h3 class="knsl-mb-40 knsl-scroll-animation">Leave a review</h3>
-                </div>
-                <div class="col-lg-12">
-                  <form class="knsl-scroll-animation">
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <input type="text" placeholder="Name">
-                      </div>
-                      <div class="col-lg-6">
-                        <input type="email" placeholder="Email">
-                      </div>
-                      <div class="col-lg-12">
-                        <textarea name="name" rows="8" placeholder="Text"></textarea>
-                      </div>
-                      <div class="col-lg-12">
-                        <div class="knsl-form-submit-frame">
-                          <!-- temporary button to show the popup -->
-                          <a class="knsl-btn" data-fancybox href="#knsl-success">Send</a>
-                          <!-- <button class="knsl-btn">Send</button> -->
-                          <div class="knsl-text-sm">*We promise not to disclose your personal information to third parties.</div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </section>
 
           </div>
           <div class="col-lg-4">
@@ -286,18 +114,18 @@
               <div class="knsl-room-features-lg knsl-mb-20">
                 <div class="knsl-feature">
                   <div class="knsl-icon-frame"><img src="{% static 'img/icons/bed.svg' %}" alt="icon"></div>
-                  <span>{{ room.maximum_people }}Guests</span>
+                  <span>{{ room.maximum_people }} 'Ατομα</span>
                 </div>
                 <div class="knsl-feature">
                   <div class="knsl-icon-frame"><img src="{% static 'img/icons/square.svg' %}" alt="icon"></div>
-                  <span>{{ room.room_size }} sq</span>
-                </div> 
+                  <span>{{ room.room_size }} τμ</span>
+                </div>
               </div>
               <!-- room info end -->
 
               <div class="knsl-price-card knsl-mb-20">
-                <div class="knsl-price-number">$175<span>/night</span></div>
-                <div class="knsl-btn">Reservation</div>
+
+                <a href="tel:6939899187" class="knsl-btn">Reservation</a>
               </div>
 
               <div class="knsl-room-features-lg knsl-mb-20">
@@ -305,8 +133,17 @@
                   <div class="knsl-icon-frame"><img src="{% static 'img/icons/bed.svg' %}" alt="icon"></div>
                   <span>{{ room.get_bed_size_display }}</span>
                 </div>
-              
               </div>
+                <div class="knsl-room-features-lg knsl-mb-20"><h5>ΠΑΡΟΧΕΣ</h5></div>
+                 <!-- features -->
+                {% for ele in object.chars.all %}
+                    <div class="knsl-room-features-lg knsl-mb-20">
+                        <div class="knsl-feature">
+
+                          <span>{{ ele }}</span>
+                        </div>
+                      </div>
+                {% endfor %}
 
             </div>
             <!-- sidebar end -->

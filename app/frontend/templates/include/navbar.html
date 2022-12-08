@@ -6,7 +6,7 @@
       <div class="knsl-left-side">
         <!-- logo -->
         <a href="{% url 'homepage_gr' %}" class="knsl-logo-frame">
-          <img src="{% static 'img/logo.svg' %}" alt="Kinsley">
+          <img src="{% static 'my_photos/logo.jpg' %}" alt="menexes">
         </a>
         <!-- logo end -->
       </div>
@@ -15,6 +15,7 @@
         <div class="knsl-menu">
           <nav>
             <ul>
+                <li><a href="{% url 'about_us_gr' %}">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
                 <li><a href="{% url 'about_us_gr' %}">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a></li>
                 <li><a href="{% url 'room_list_gr' %}">ΔΙΑΜΟΝΗ</a></li>
                 <li><a href="{% url 'discover_list_gr' %}">ΠΡΟΟΡΙΣΜΟΙ</a></li>
@@ -24,9 +25,9 @@
         </div>
         <!-- menu end -->
         <!-- action button -->
-        <a id="book-popup" class="knsl-btn"><img src="{% static 'img/icons/bookmark.svg' %}" alt="icon">Book now</a>
+        <a href={{ eng_link }}><img src="{% static 'my_photos/eng.png' %}" alt="icon"></a>
         <!-- action button end -->
-        <a style='color:blue' href={{ eng_link }}>EN </a>
+
       </div>
       <!-- menu button -->
       <div class="knsl-menu-btn"><span></span></div>

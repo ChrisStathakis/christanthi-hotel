@@ -5,7 +5,7 @@
     <!-- page wrapper -->
   <div class="knsl-app">
 
-   {% include 'include/navbar.html' %}
+   {% include 'include/navbar_eng.html' %}
 
 
     <!-- banner -->
@@ -17,11 +17,11 @@
           <div class="col-lg-12">
 
             <div class="knsl-center knsl-title-frame">
-              <h1 class="knsl-mb-20 knsl-h1-inner">ΠΡΟΟΡΙΣΜΟΙ</h1>
+              <h1 class="knsl-mb-20 knsl-h1-inner">DESTINATIONS</h1>
               <p class="knsl-mb-30">Laborum accusantium libero commodi. Voluptate consequatur itaque expedita accusamus impedit perspiciatis asperiores necessitatibus assumenda magnam ipsa.</p>
               <ul class="knsl-breadcrumbs">
-                <li><a href="{% url 'homepage_gr' %}">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
-                <li><span>ΠΡΟΟΡΙΣΜΟΙ</span></li>
+                <li><a href="{% url 'homepage_eng' %}">Homepage</a></li>
+                <li><span>Destinations</span></li>
               </ul>
             </div>
 
@@ -33,35 +33,12 @@
 
     <!-- blog -->
     <section class="knsl-p-100-100">
-      <img src="img/palm.svg" class="knsl-deco-left" alt="palm">
+      <img src="{% static 'img/palm.svg' %}" class="knsl-deco-left" alt="palm">
         <div class="container">
             <div class="row align-items-center">
-                {% for ele in objrct_list %}
-                    <div class="col-lg-4">
-                        <!-- blog card -->
-                        <div class="knsl-blog-card">
-                            <div class="knsl-cover-frame">
-                                <a href=""><img src="" alt="cover"></a>
-                            </div>
-                            <div class="knsl-description-frame">
-                                <div class="knsl-room-features">
-                                    <div class="knsl-feature">
-                                        <div class="knsl-icon-frame knsl-icon-author"><img src="img/faces/1.jpg" alt="icon"></div>
-                                        <span>Paul Trueman</span>
-                                    </div>
-                                    <div class="knsl-feature">
-                                        <div class="knsl-icon-frame"><img src="img/icons/time.svg" alt="icon"></div>
-                                        <span>12.08.21 23:13</span>
-                                    </div>
-                                </div>
-                                <a href="publication.html">
-                                    <h4 class="knsl-mb-20">18 Easy Steps for Planning Your Next Trip</h4>
-                                </a>
-                                <div class="knsl-text-light knsl-text-sm">Libero non aut dignissimos optio hic laudantium.</div>
-                            </div>
-                        </div>
-                        <!-- blog card end -->
-
+                {% for ele in object_list %}
+                    <div class="col-4">
+                    {% include 'include/destination_card_eng.html' %}
                     </div>
                 {% endfor %}
             </div>
@@ -70,7 +47,7 @@
 
 
 
-   {% include 'include/footer.html' %}
+   {% include 'include/footer_eng.html' %}
 
 
 

@@ -9,7 +9,7 @@
 <!-- datepicker js -->
 <script src="{% static 'js/plugins/datepicker.js' %}"></script>
 <!-- smooth scroll js -->
-<script src="{% static 'js/plugins/smooth-scroll.js"' %}></script>
+<script src="{% static 'js/plugins/smooth-scroll.js' %}"></script>
 <!-- isotope js -->
 <script src="{% static 'js/plugins/isotope.min.js' %}"></script>
 <!-- mapbox js -->
@@ -22,3 +22,11 @@
 <script src="{% static 'js/plugins/sticky.js' %}"></script>
 <!-- kinsley js -->
 <script src="{% static 'js/main.js' %}"></script>
+
+
+<script type="text/javascript">
+    $(window).on('load', function() {
+        console.log('here!');
+        $('#messageModal').modal('show');
+    });
+</script>

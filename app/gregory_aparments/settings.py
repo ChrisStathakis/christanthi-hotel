@@ -29,7 +29,7 @@ DEBUG = config('DEBUG_')
 REAL_DB = config('REAL_DB_')
 PRODUCTION = config('PRODUCTION_')
 
-ALLOWED_HOSTS = ['164.92.197.118', '127.0.0.1', 'localhost'] if PRODUCTION else ['127.0.0.1']
+ALLOWED_HOSTS = ['164.92.197.118', 'localhost', 'menexes-monemvasia.gr'] if PRODUCTION else ['127.0.0.1']
 
 if PRODUCTION:
     SESSION_COOKIE_SECURE = True

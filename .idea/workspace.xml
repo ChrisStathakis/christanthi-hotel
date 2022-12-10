@@ -10,15 +10,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="16076" />
+    <option name="totalTimeSeconds" value="16353" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/gregory_aparments/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+              <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/gregory_aparments/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="517">
+              <caret line="31" column="36" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="36" />
+              <folding>
+                <element signature="e#641#673#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -28,15 +40,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="9" column="40" selection-start-line="1" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="docker-compose.staging.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.staging.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -200,6 +203,25 @@
               <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="staticfiles" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -216,12 +238,13 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\projects\chrisanthi-hotel\app\frontend\static\my_photos" />
-      <recent name="D:\projects\gregory-aparments-docker\app" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projects\chrisanthi-hotel\app\frontend\static\my_photos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\chrisanthi-hotel\app\frontend\static" />
+      <recent name="D:\projects\chrisanthi-hotel\app\frontend\static\my_photos" />
+      <recent name="D:\projects\gregory-aparments-docker\app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -258,8 +281,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32943678" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32943678" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -293,13 +316,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.staging.yml" />
     <entry file="file://$PROJECT_DIR$/.env.dev" />
     <entry file="file://$PROJECT_DIR$/app/rooms/views.py">
@@ -594,7 +610,17 @@
     <entry file="file://$PROJECT_DIR$/app/gregory_aparments/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/gregory_aparments/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="36" />
+          <folding>
+            <element signature="e#641#673#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

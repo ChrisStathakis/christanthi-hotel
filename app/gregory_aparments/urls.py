@@ -29,7 +29,7 @@ urlpatterns = [
     path('', include('frontend.urls')),
     path('newslettters/', include('newsletter.urls')),
 
-    path('favicon.ico', favicon_view)
+    # path('favicon.ico', favicon_view)
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

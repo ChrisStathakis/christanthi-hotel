@@ -2,3 +2,9 @@ location /static/ {
     alias /home/app/staticfiles/;
 
 }
+
+location  /favicon.ico/ {
+  return 204;
+  access_log     off;
+  log_not_found  off;
+}

@@ -22,6 +22,13 @@
                 <li><a href="{% url 'homepage_gr' %}">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
                 <li><span>ΠΡΟΟΡΙΣΜΟΙ</span></li>
               </ul>
+
+                <p><br>Τα μικρά χωριά, οι όρμοι και τα κάστρα που κάποτε προστάτευαν τη ζωή και
+                    τον πολιτισμό της περιοχής, σήμερα αντιστέκονται στον χρόνο και παραμένουν
+                    ζωντανά, έχοντας ουσιαστικά αλλάξει χρήση. Από την τουριστική πλέον
+                    καστροπολιτεία της Μονεμβασιάς, ξεκινάμε για μια περιήγηση στη γύρω περιοχή,
+                    ανακαλύπτοντας τις ομορφότερες διαδρομές.
+                </p>
             </div>
 
           </div>
@@ -32,34 +39,101 @@
 
     <!-- blog -->
     <section class="knsl-p-100-100">
-      <img src="img/palm.svg" class="knsl-deco-left" alt="palm">
+      <img src="{% static 'img/palm.svg' %}" class="knsl-deco-left" alt="palm">
         <div class="container">
             <div class="row align-items-center">
-                {% for ele in object_list %}
-                    <div class="col-lg-4">
+                <div class="col-lg-6">
                         <!-- blog card -->
-                        <div class="knsl-blog-card">
-                            <div class="knsl-cover-frame">
-                                <a href="{{ ele.get_absolute_url }}"><img src="{{ ele.image.url }}" alt="cover"></a>
-                            </div>
-                            <div class="knsl-description-frame">
-                                <div class="knsl-room-features">
-                                    <div class="knsl-feature">
-                                        <div class="knsl-icon-frame knsl-icon-author"></div>
-                                        <span>{{ ele.category }}</span>
-                                    </div>
-                                  
-                                </div>
-                                <a href="{{ ele.get_absolute_url }}">
-                                    <h4 class="knsl-mb-20">{{ ele }}</h4>
-                                </a>
-                                <div class="knsl-text-light knsl-text-sm">{{ ele.text|safe }}</div>
-                            </div>
-                        </div>
-                        <!-- blog card end -->
-
+                <div class="knsl-blog-card">
+                    <div class="knsl-cover-frame">
+                        <img src="{% static 'my_photos/αμπελακια.jpeg' %}" alt="cover">
                     </div>
-                {% endfor %}
+                    <div class="knsl-description-frame">
+                        <div class="knsl-room-features">
+                            <div class="knsl-feature">
+                                <div class="knsl-icon-frame knsl-icon-author"></div>
+                                <span>10 km από την Μονεμβάσια</span>
+                            </div>
+
+                        </div>
+                        <a href="{{ ele.get_absolute_url }}">
+                            <h4 class="knsl-mb-20">ΠΑΡΑΛΙΑ ΑΜΠΕΛΑΚΙΑ</h4>
+                        </a>
+                        <div class="">Τα Αμπελάκια, αποτελούν ιδανικό προορισμό για όσους επιθυμούν να κολυμπήσουν σε μια οργανωμένη παραλία με αρκετές ανέσεις, ατενίζοντας την αφοπλιστική θέα του  βράχου της Μονεμβασίας.</div>
+                    </div>
+                </div>
+                        <!-- blog card end -->
+            </div>
+                <div class="col-lg-6">
+                        <!-- blog card -->
+                <div class="knsl-blog-card">
+                    <div class="knsl-cover-frame">
+                        <img src="{% static 'my_photos/kipariss.jpg' %}" alt="cover">
+                    </div>
+                    <div class="knsl-description-frame">
+                        <div class="knsl-room-features">
+                            <div class="knsl-feature">
+                                <div class="knsl-icon-frame knsl-icon-author"></div>
+                                <span>Το Κυπαρίσσι απέχει περίπου 23 χλμ. από την Ρειχιά</span>
+                            </div>
+
+                        </div>
+                        <a href="{{ ele.get_absolute_url }}">
+                            <h4 class="knsl-mb-20">Κυπαρίσσι</h4>
+                        </a>
+                        <div class=""> Ο ορεινός όγκος που αγκαλιάζει το Κυπαρίσσι κρύβει κάποιες από τις πιο ενδιαφέρουσες πεζοπορικές διαδρομές, ενώ οι λάτρεις της αναρρίχησης θα ικανοποιηθούν από τις δυνατότητες των αναρριχητικών πεδίων που βρίσκονται όμως ακόμη υπό διαμόρφωση.
+
+Σήμερα το Κυπαρίσσι αποτελεί έναν προορισμό με επάρκεια υποδομών εστίασης και φιλοξενίας, ικανό να φιλοξενήσει εκατοντάδες παραθεριστές.</div>
+                    </div>
+                </div>
+                        <!-- blog card end -->
+            </div>
+                <div class="col-lg-6">
+                        <!-- blog card -->
+                <div class="knsl-blog-card">
+                    <div class="knsl-cover-frame">
+                        <img src="{% static 'my_photos/Kastania.jpg' %}" alt="cover">
+                    </div>
+                    <div class="knsl-description-frame">
+                        <div class="knsl-room-features">
+                            <div class="knsl-feature">
+                                <div class="knsl-icon-frame knsl-icon-author"></div>
+                                <span>*</span>
+                            </div>
+
+                        </div>
+                        <a href="{{ ele.get_absolute_url }}">
+                            <h4 class="knsl-mb-20">Σπήλαιο της Καστανιάς</h4>
+                        </a>
+                        <div class="">Ένα από τα πιο εντυπωσιακά σπήλαια της Ελλάδας βρίσκεται καλά κρυμμένο στο νότιο άκρο της Πελοποννήσου, λίγα λεπτά από τη Νεάπολη. Η καταπράσινη ορεινή διαδρομή για το σπήλαιο ακολουθεί την ανατολική απόληξη του Πάρνωνα που σβήνει στο ακρωτήριο του Μαλέα.</div>
+                    </div>
+                </div>
+                        <!-- blog card end -->
+            </div>
+                <div class="col-lg-6">
+                        <!-- blog card -->
+                <div class="knsl-blog-card">
+                    <div class="knsl-cover-frame">
+                        <img src="{% static 'my_photos/asopos.jpg' %}" alt="cover">
+                    </div>
+                    <div class="knsl-description-frame">
+                        <div class="knsl-room-features">
+                            <div class="knsl-feature">
+                                <div class="knsl-icon-frame knsl-icon-author"></div>
+                                <span>30 km από την Μονεμβάσια</span>
+                            </div>
+
+                        </div>
+                        <a href="{{ ele.get_absolute_url }}">
+                            <h4 class="knsl-mb-20">Αρχαία Ασωπός – Πλύτρα</h4>
+                        </a>
+                        <div class="">Η αρχαία πόλη Ασωπός, ταυτίζεται με τα λείψανα στην μικρή χερσόνησο στα ΝΑ της σύγχρονης Πλύτρας. Η πόλη μαρτυρείται επιγραφικά και ανασκαφικά από την ύστερη ελληνιστική εποχή και κατά τον Παυσανία ήταν αρχικά μέλος του Κοινού των Λακεδαιμονίων και αργότερα του κοινού των Ελευθερολακώνων. Από επιγραφικές μαρτυρίες γνωρίζουμε επίσης ότι στην περιοχή της είχε εκτάσεις ο Γαίος Ιούλιος Ευρυκλής, η σημαντικότερη πολιτική φυσιογνωμία της Λακωνίας κατά την εποχή του Αυγούστου.</div>
+                    </div>
+                </div>
+                        <!-- blog card end -->
+            </div>
+
+
             </div>
         </div>
     </section>

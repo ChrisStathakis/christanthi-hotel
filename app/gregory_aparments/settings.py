@@ -27,10 +27,9 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG_')
 REAL_DB = config('REAL_DB_')
-PRODUCTION = False
+PRODUCTION = config('PRODUCTION__')
 
-ALLOWED_HOSTS = ['164.92.197.118', 'localhost', 'menexes-monemvasia.gr', 'www.menexes-monemvasia.gr'] if \
-    PRODUCTION else ['*']
+ALLOWED_HOSTS = ['164.92.197.118', 'localhost', 'menexes-monemvasia.gr', 'www.menexes-monemvasia.gr'] if PRODUCTION else ['127.0.0.1']
 
 if PRODUCTION:
     SESSION_COOKIE_SECURE = True

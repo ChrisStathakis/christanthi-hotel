@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17ef119f-8071-4fbb-8826-0dc9f5b23b0d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/frontend/static/my_photos/Kastania.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/frontend/static/my_photos/asopos.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/frontend/static/my_photos/kipariss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/frontend/static/my_photos/ακροπολη.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/frontend/static/my_photos/αμπελακια.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/frontend/templates/gr/discover_list_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/frontend/templates/gr/discover_list_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/gregory_aparments/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/gregory_aparments/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/gregory_aparments/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/gregory_aparments/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/Dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="17ef119f-8071-4fbb-8826-0dc9f5b23b0d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,26 +10,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="18716" />
+    <option name="totalTimeSeconds" value="19017" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/gregory_aparments/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+              <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="discover_list_view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="discover_list_view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/discover_list_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="118" column="56" lean-forward="true" selection-start-line="118" selection-start-column="56" selection-end-line="118" selection-end-column="56" />
+            <state relative-caret-position="391">
+              <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
               <folding>
-                <element signature="e#1577#2803#0#HTML" />
+                <element signature="e#2802#4006#0#HTML" />
               </folding>
             </state>
           </provider>
@@ -181,8 +170,8 @@
         <option value="$PROJECT_DIR$/.env.dev" />
         <option value="$PROJECT_DIR$/nginx/Dockerfile" />
         <option value="$PROJECT_DIR$/app/.env" />
-        <option value="$PROJECT_DIR$/app/gregory_aparments/settings.py" />
         <option value="$PROJECT_DIR$/app/frontend/templates/gr/discover_list_view.html" />
+        <option value="$PROJECT_DIR$/app/gregory_aparments/settings.py" />
       </list>
     </option>
   </component>
@@ -222,43 +211,7 @@
               <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="my_photos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="gr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chrisanthi-hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="gregory_aparments" type="462c0819:PsiDirectoryNode" />
+              <item name="staticfiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chrisanthi-hotel" type="b2602c69:ProjectViewProjectNode" />
@@ -317,7 +270,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -654,20 +606,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/gregory_aparments/settings.py">
+    <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/discover_list_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        <state relative-caret-position="391">
+          <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
+          <folding>
+            <element signature="e#2802#4006#0#HTML" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/templates/gr/discover_list_view.html">
+    <entry file="file://$PROJECT_DIR$/app/gregory_aparments/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="118" column="56" lean-forward="true" selection-start-line="118" selection-start-column="56" selection-end-line="118" selection-end-column="56" />
-          <folding>
-            <element signature="e#1577#2803#0#HTML" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>

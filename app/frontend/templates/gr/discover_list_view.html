@@ -64,6 +64,28 @@
                 </div>
                         <!-- blog card end -->
             </div>
+                {% for ele in object_list %}
+                     <div class="col-lg-6">
+                        <!-- blog card -->
+                        <div class="knsl-blog-card">
+                            <div class="knsl-cover-frame">
+                                <img src="{% static 'my_photos/asopos.jpg' %}" alt="cover">
+                            </div>
+                            <div class="knsl-description-frame">
+                                <div class="knsl-room-features">
+                                    <div class="knsl-feature">
+                                        <div class="knsl-icon-frame knsl-icon-author"></div>
+
+                                    </div>
+
+                                </div>
+                                    <h4 class="knsl-mb-20">{{ ele }}</h4>
+                                <div class="">{{ ele.text|safe }}</div>
+                            </div>
+                        </div>
+                                <!-- blog card end -->
+                    </div>
+                {% endfor %}
                 <div class="col-lg-6">
                         <!-- blog card -->
                 <div class="knsl-blog-card">

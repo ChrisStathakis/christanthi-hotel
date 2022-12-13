@@ -42,28 +42,6 @@
       <img src="{% static 'img/palm.svg' %}" class="knsl-deco-left" alt="palm">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                        <!-- blog card -->
-                <div class="knsl-blog-card">
-                    <div class="knsl-cover-frame">
-                        <img src="{% static 'my_photos/αμπελακια.jpeg' %}" alt="cover">
-                    </div>
-                    <div class="knsl-description-frame">
-                        <div class="knsl-room-features">
-                            <div class="knsl-feature">
-                                <div class="knsl-icon-frame knsl-icon-author"></div>
-                                <span>10 km από την Μονεμβάσια</span>
-                            </div>
-
-                        </div>
-                        <a href="{{ ele.get_absolute_url }}">
-                            <h4 class="knsl-mb-20">ΠΑΡΑΛΙΑ ΑΜΠΕΛΑΚΙΑ</h4>
-                        </a>
-                        <div class="">Τα Αμπελάκια, αποτελούν ιδανικό προορισμό για όσους επιθυμούν να κολυμπήσουν σε μια οργανωμένη παραλία με αρκετές ανέσεις, ατενίζοντας την αφοπλιστική θέα του  βράχου της Μονεμβασίας.</div>
-                    </div>
-                </div>
-                        <!-- blog card end -->
-            </div>
                 {% for ele in object_list %}
                      <div class="col-lg-6">
                         <!-- blog card -->
@@ -86,11 +64,7 @@
                                 <!-- blog card end -->
                     </div>
                 {% endfor %}
-
-
             </div>
-
-
             </div>
         </div>
     </section>

@@ -1,9 +1,8 @@
-{% extends 'gr/index.html' %} {% load static %}
+{% extends 'eng/index.html' %} {% load static %}
 
 {% block content %}
 
-    <!-- page wrapper -->
-  <div class="knsl-app">
+
 
    {% include 'include/navbar_eng.html' %}
 
@@ -17,12 +16,18 @@
           <div class="col-lg-12">
 
             <div class="knsl-center knsl-title-frame">
-              <h1 class="knsl-mb-20 knsl-h1-inner">DESTINATIONS</h1>
-              <p class="knsl-mb-30">Laborum accusantium libero commodi. Voluptate consequatur itaque expedita accusamus impedit perspiciatis asperiores necessitatibus assumenda magnam ipsa.</p>
+              <h1 class="knsl-mb-20 knsl-h1-inner">Destinations</h1>
+                <br />
               <ul class="knsl-breadcrumbs">
                 <li><a href="{% url 'homepage_eng' %}">Homepage</a></li>
                 <li><span>Destinations</span></li>
               </ul>
+
+                <p><br>The small villages, coves and castles that once protected life and
+                     the culture of the region, today they resist time and remain
+                     alive, having essentially changed use. From tourism now
+                     castle state of Monemvasia, we start for a tour of the surrounding area,
+                     discovering the most beautiful routes.
             </div>
 
           </div>
@@ -36,23 +41,36 @@
       <img src="{% static 'img/palm.svg' %}" class="knsl-deco-left" alt="palm">
         <div class="container">
             <div class="row align-items-center">
+
                 {% for ele in object_list %}
-                    <div class="col-4">
-                    {% include 'include/destination_card_eng.html' %}
+                     <div class="col-lg-6">
+                        <!-- blog card -->
+                        <div class="knsl-blog-card">
+                            <div class="knsl-cover-frame">
+                                <img src="{{ ele.image.url }}" alt="cover">
+                            </div>
+                            <div class="knsl-description-frame">
+                                <div class="knsl-room-features">
+                                    <div class="knsl-feature">
+                                        <div class="knsl-icon-frame knsl-icon-author"></div>
+
+                                    </div>
+
+                                </div>
+                                    <h4 class="knsl-mb-20">{{ ele.title_eng }}</h4>
+                                <div class="">{{ ele.text_eng|safe }}</div>
+                            </div>
+                        </div>
+                                <!-- blog card end -->
                     </div>
                 {% endfor %}
+
+
+            </div>
+
+        </div>
             </div>
         </div>
     </section>
-
-
-
-   {% include 'include/footer_eng.html' %}
-
-
-
-
-  </div>
-  <!-- page wrapper end -->
 
 {% endblock %}

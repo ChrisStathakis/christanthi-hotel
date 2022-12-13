@@ -1,13 +1,5 @@
 {% extends 'eng/index.html' %} {% load static %}
 
-{% block extra_cs %}
-    <style>
-        .nice-select .list .option {
-            width: 100px;
-
-        }
-    </style>
-{% endblock %}
 {% block content %}
 
     {% include 'include/navbar_eng.html' %}
@@ -20,9 +12,10 @@
           <div class="col-lg-12">
 
             <div class="knsl-center knsl-title-frame">
-              <h1 class="knsl-mb-20 knsl-h1-inner">Get in Touch</h1>
+              <h1 class="knsl-mb-20 knsl-h1-inner">CONTACT</h1>
+              <BR />
               <ul class="knsl-breadcrumbs">
-                <li><a href="{% url 'homepage_gr' %}">Homepage</a></li>
+                <li><a href="{% url 'homepage_eng' %}">Homepage</a></li>
                 <li><span>Contact</span></li>
               </ul>
             </div>
@@ -48,9 +41,9 @@
 
               <!-- icon box -->
               <div class="knsl-icon-box">
-                <img src="{% static 'img/features/9.svg' %}" alt="icon" class="knsl-mb-10">
+                <i style="margin-bottom: 1%" class="fa fa-address-book fa-3x"></i>
                 <h5 class="knsl-mb-10">Address</h5>
-                <p>Santo Domingo 9479 Magarto st.</p>
+                <p>Monemvasia Castle</p>
               </div>
               <!-- icon box end -->
 
@@ -59,9 +52,9 @@
 
               <!-- icon box -->
               <div class="knsl-icon-box">
-                <img src="{% static 'img/features/10.svg' %}" alt="icon" class="knsl-mb-10">
-                <h5 class="knsl-mb-10">Call</h5>
-                <p>+93 (736) 6X8 84 84</p>
+                <i style="margin-bottom: 1%" class="fa fa-phone fa-3x"></i>
+                <h5 class="knsl-mb-10">Phones</h5>
+                <p>6939899187</p>
               </div>
               <!-- icon box end -->
 
@@ -70,9 +63,9 @@
 
               <!-- icon box -->
               <div class="knsl-icon-box">
-                <img src="{% static 'img/features/11.svg' %}" alt="icon" class="knsl-mb-10">
-                <h5 class="knsl-mb-10">Email</h5>
-                <p>kinsley.inbox@mail.com</p>
+                <i style="margin-bottom: 1%" class="fa fa-mail-bulk fa-3x"></i>
+                <h5 class="knsl-mb-10">EMAIL</h5>
+                <p>xrysman@gmail.com</p>
               </div>
               <!-- icon box end -->
 
@@ -89,27 +82,26 @@
     <section class="knsl-transition-top knsl-p-0-100">
       <img src="{% static 'img/palm.svg' %}" class="knsl-deco-left" alt="palm">
       <img src="{% static 'img/palm.svg' %}" class="knsl-deco-right" alt="palm">
-      <div class="container">
+      <div class="container">a
         <div class="row">
           <div class="col-lg-12">
 
             <div class="knsl-center knsl-title-frame knsl-scroll-animation knsl-mb-100">
-              <h2 class="knsl-mb-20">Kinsley is Waiting for You!</h2>
-              <p class="knsl-mb-30">Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem. Laborum accusantium libero commodi id officiis itaque esse adipisci, necessitatibus asperiores, illo odio.</p>
-              <a href="{% url 'about_us_gr' %}" class="knsl-btn knsl-btn-md">More about us</a>
+              <h2 class="knsl-mb-20">Ask us</h2>
+              <p class="knsl-mb-30"></p>
             </div>
 
           </div>
           <div class="col-lg-12">
-            <form class="form" method="post">
+            <form class="knsl-scroll-animation" method="post">
                 {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit" class="btn btn-success">SEND</button>
+                {{ form }}
+                <button type="submit" class="btn btn-success">Send</button>
             </form>
           </div>
         </div>
       </div>
     </section>
 
-    {% include 'include/footer_eng.html' %}
+
 {% endblock %}

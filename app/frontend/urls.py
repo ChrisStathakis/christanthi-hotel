@@ -14,7 +14,7 @@ from discover.sitemap import DiscoverCategorySitemap
 sitemaps = {
     'static': StaticViewsSitemap,
     'rooms': RoomSitemap,
-    'discover': DiscoverCategorySitemap
+
 }
 
 urlpatterns = [

@@ -11,13 +11,16 @@ class Room(models.Model):
     BED_OPTIONS = (
         ('1', '1 ΔΙΠΛΟ ΚΡΕΒΑΤΙ'),
         ('2', 'ΜΟΝΟ ΚΡΕΒΑΤΙ'),
-        ('3', '1 ΔΙΠΛΟ ΚΡΕΒΑΤΙ-ΚΑΝΑΠΕΣ ΚΡΕΒΑΤΙ')
+        ('3', '1 ΔΙΠΛΟ ΚΡΕΒΑΤΙ-ΚΑΝΑΠΕΣ ΚΡΕΒΑΤΙ'),
+        ('4', '1 ΔΙΠΛΟ ΚΡΕΒΑΤΙ ΚΑΙ 2 ΜΟΝΑ ΚΡΕΒΑΤΙΑ')
+
 
     )
     BED_OPTIONS_ENG = (
         ('1', '1 DOUBLE BED'),
         ('2', 'SINGLE BED'),
-        ('3', '1 DOUBLE BED -SOFA BED')
+        ('3', '1 DOUBLE BED -SOFA BED'),
+        ('4', '1 DOUBLE DED AND 2 SINGLE BEDS')
     )
     active = models.BooleanField(default=True, verbose_name='ΚΑΤΑΣΤΑΣΗ')
     title = models.CharField(max_length=200, unique=True, verbose_name='ΤΙΤΛΟΣ')

@@ -186,7 +186,7 @@ EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
 SENDGRID_API_KEY = config('SENDGRID_API_KEY')
 SENDGRID_SANDBOX_MODE_IN_DEBUG = False
 SENDGRID_ECHO_TO_STDOUT = True
-SITE_EMAIL = 'gregoryshousexifias@gmail.com' if REAL_DB else 'christosstath10@gmail.com'
+SITE_EMAIL = 'xrysman@gmail.com' if REAL_DB else 'christosstath10@gmail.com'
 
 
 ADMINS = [('John', 'lirageika@hotmail.gr'), ]

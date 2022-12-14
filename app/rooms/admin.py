@@ -33,6 +33,13 @@ class RoomAdmin(admin.ModelAdmin):
             'fields': (('title_eng', 'bed_size_eng'),
                        'description_eng'
                        )
+        }),
+        ('extra', {
+            'fields': (
+                ('extra', ),
+                ('extra_text_gr', 'extra_text_eng', ),
+                ('extra_image')
+        )
         })
     )
 

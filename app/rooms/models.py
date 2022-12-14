@@ -6,6 +6,8 @@ from tinymce.models import HTMLField
 def upload_photo(instance, filename):
     return f'photos/{instance.room.title}/{filename}'
 
+def extra_upload_photo(instance, filename):
+    return f'photos/{instance.id}/{filename}'
 
 class Room(models.Model):
     BED_OPTIONS = (
@@ -37,6 +39,10 @@ class Room(models.Model):
     webatelier_link = models.URLField(blank=True,)
     slug = models.SlugField(blank=True, null=True, allow_unicode=True, max_length=240, db_index=True)
     location = models.TextField(blank=True, null=True)
+    extra_image = models.ImageField(blank=True, null=True, upload_to=extra_upload_photo)
+    extra_text_gr = HTMLField(null=True, blank=True)
+    extra_text_eng = HTMLField(null=True, blank=True)
+    extra = models.BooleanField(default=False)
 
     class Meta:
         verbose_name_plural = 'ΔΩΜΑΤΙΑ'

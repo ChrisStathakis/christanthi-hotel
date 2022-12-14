@@ -99,7 +99,12 @@
               </div>
             </section>
             <!-- map end -->
-
+            {% if object.extra %}
+                    <div class="knsl-center knsl-title-frame knsl-scroll-animation knsl-mb-100 knsl-active-el">
+                      {{ object.extra_text_eng|safe }}
+                      <img src="{{ object.extra_image.url }}" class="imag img-fluid" />
+                    </div>
+                {% endif %}
 
 
 

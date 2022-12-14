@@ -56,7 +56,6 @@ class RoomDetailView(DetailView):
         context['page_title'] = self.object.title
         # context['keywords'] = ''
         context['eng_link'] = self.object.get_absolute_url_eng
-        print('here!@', self.object.images.all())
         return context
 
 

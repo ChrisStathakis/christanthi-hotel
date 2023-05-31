@@ -4,7 +4,5 @@ location /static/ {
 }
 
 location  /favicon.ico/ {
-  return 204;
-  access_log     off;
-  log_not_found  off;
+  alias /home/app/static/favicon.ico;
 }

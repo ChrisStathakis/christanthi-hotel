@@ -1,7 +1,7 @@
 FROM python:3.9.6-alpine
 
 RUN mkdir -p /home/app/
-RUN mkdir - p /home/app/staticfiles/
+RUN mkdir -p /home/app/staticfiles/
 
 WORKDIR /home/app/
 
@@ -16,11 +16,7 @@ RUN apk update \
 # install dependencies
 RUN apk update && apk add libpq
 
-# install dependencies
 COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 
-
-
-# copy project
 COPY . .

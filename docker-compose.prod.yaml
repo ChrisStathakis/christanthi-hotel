@@ -48,6 +48,13 @@ services:
       - acme:/etc/acme.sh
     depends_on:
       - nginx-proxy
+  
+  redirect:
+    image: adamkdean/redirect
+    environment:
+      - VIRTUAL_HOST=menexes-monemvasia.gr
+      - REDIRECT_LOCATION="http://www.menexes-monemvasia.gr"
+      - REDIRECT_STATUS_CODE=30
 
 
 volumes:

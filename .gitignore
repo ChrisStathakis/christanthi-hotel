@@ -3,4 +3,3 @@ venv
 .env.dev
 .env.staging
 .env.prod
-db.json
